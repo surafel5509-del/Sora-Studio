@@ -1,0 +1,27 @@
+835:w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/drums/src/main/kotlin/com/sorastudio/feature/drums/DrumsScreen.kt:137:65 Type mismatch: inferred type is String? but String was expected
+836:w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/drums/src/main/kotlin/com/sorastudio/feature/drums/DrumsScreen.kt:233:96 Type mismatch: inferred type is String? but String was expected
+851:w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/instruments/src/main/kotlin/com/sorastudio/feature/instruments/InstrumentsScreen.kt:179:65 Type mismatch: inferred type is String? but String was expected
+932:w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/drums/src/main/kotlin/com/sorastudio/feature/drums/DrumsScreen.kt:137:65 Type mismatch: inferred type is String? but String was expected
+933:w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/drums/src/main/kotlin/com/sorastudio/feature/drums/DrumsScreen.kt:233:96 Type mismatch: inferred type is String? but String was expected
+945:w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/instruments/src/main/kotlin/com/sorastudio/feature/instruments/InstrumentsScreen.kt:179:65 Type mismatch: inferred type is String? but String was expected
+1201:> Task :app:compileReleaseKotlin FAILED
+1202:e: Supertypes of the following classes cannot be resolved. Please make sure you have the required dependencies in the classpath:
+1206:e: file:///home/runner/work/Sora-Studio/Sora-Studio/app/src/main/kotlin/com/sorastudio/di/AppModule.kt:38:35 Cannot access 'androidx.room.RoomDatabase' which is a supertype of 'com.sorastudio.core.database.SoraDatabase'. Check your module classpath for missing or conflicting dependencies
+1207:e: file:///home/runner/work/Sora-Studio/Sora-Studio/app/src/main/kotlin/com/sorastudio/di/AppModule.kt:43:29 Cannot access 'androidx.room.RoomDatabase' which is a supertype of 'com.sorastudio.core.database.SoraDatabase'. Check your module classpath for missing or conflicting dependencies
+1208:e: file:///home/runner/work/Sora-Studio/Sora-Studio/app/src/main/kotlin/com/sorastudio/di/AppModule.kt:48:37 Cannot access 'androidx.room.RoomDatabase' which is a supertype of 'com.sorastudio.core.database.SoraDatabase'. Check your module classpath for missing or conflicting dependencies
+1209:e: file:///home/runner/work/Sora-Studio/Sora-Studio/app/src/main/kotlin/com/sorastudio/di/AppModule.kt:53:32 Cannot access 'androidx.room.RoomDatabase' which is a supertype of 'com.sorastudio.core.database.SoraDatabase'. Check your module classpath for missing or conflicting dependencies
+1210:e: file:///home/runner/work/Sora-Studio/Sora-Studio/app/src/main/kotlin/com/sorastudio/di/AppModule.kt:58:35 Cannot access 'androidx.room.RoomDatabase' which is a supertype of 'com.sorastudio.core.database.SoraDatabase'. Check your module classpath for missing or conflicting dependencies
+1212:> Task :app:compileDebugKotlin FAILED
+1213:e: Supertypes of the following classes cannot be resolved. Please make sure you have the required dependencies in the classpath:
+1217:e: file:///home/runner/work/Sora-Studio/Sora-Studio/app/src/main/kotlin/com/sorastudio/di/AppModule.kt:38:35 Cannot access 'androidx.room.RoomDatabase' which is a supertype of 'com.sorastudio.core.database.SoraDatabase'. Check your module classpath for missing or conflicting dependencies
+1218:e: file:///home/runner/work/Sora-Studio/Sora-Studio/app/src/main/kotlin/com/sorastudio/di/AppModule.kt:43:29 Cannot access 'androidx.room.RoomDatabase' which is a supertype of 'com.sorastudio.core.database.SoraDatabase'. Check your module classpath for missing or conflicting dependencies
+1219:e: file:///home/runner/work/Sora-Studio/Sora-Studio/app/src/main/kotlin/com/sorastudio/di/AppModule.kt:48:37 Cannot access 'androidx.room.RoomDatabase' which is a supertype of 'com.sorastudio.core.database.SoraDatabase'. Check your module classpath for missing or conflicting dependencies
+1220:e: file:///home/runner/work/Sora-Studio/Sora-Studio/app/src/main/kotlin/com/sorastudio/di/AppModule.kt:53:32 Cannot access 'androidx.room.RoomDatabase' which is a supertype of 'com.sorastudio.core.database.SoraDatabase'. Check your module classpath for missing or conflicting dependencies
+1221:e: file:///home/runner/work/Sora-Studio/Sora-Studio/app/src/main/kotlin/com/sorastudio/di/AppModule.kt:58:35 Cannot access 'androidx.room.RoomDatabase' which is a supertype of 'com.sorastudio.core.database.SoraDatabase'. Check your module classpath for missing or conflicting dependencies
+1227:* What went wrong:
+1228:Execution failed for task ':app:compileReleaseKotlin'.
+1238:org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:compileReleaseKotlin'.
+1440:* What went wrong:
+1441:Execution failed for task ':app:compileDebugKotlin'.
+1451:org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:compileDebugKotlin'.
+1663:BUILD FAILED in 3m 45s
