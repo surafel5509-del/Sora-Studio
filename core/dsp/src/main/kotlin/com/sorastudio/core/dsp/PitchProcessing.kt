@@ -55,8 +55,9 @@ object TimePitch {
     fun pitchShiftMono(input: FloatArray, semitones: Double): FloatArray {
         if (input.isEmpty() || abs(semitones) < 0.01) return input.copyOf()
         val ratio = LevelMath.semitonesToRatio(semitones)
-        // Stretch by 1/ratio then resample by ratio.
-        val stretched = timeStretchMono(input, 1.0 / ratio)
+        // Stretch LONGER by the ratio (pitch preserved), then varispeed-resample
+        // back to the original length: playback-rate change multiplies pitch by ratio.
+        val stretched = timeStretchMono(input, ratio)
         return resampleMono(stretched, ratio, input.size)
     }
 
