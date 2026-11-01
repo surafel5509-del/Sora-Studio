@@ -1,0 +1,6 @@
+737:com.sorastudio.core.dsp.DspTest > pitch shift up an octave doubles detected frequency FAILED
+748:> Task :core:dsp:test FAILED
+753:* What went wrong:
+754:Execution failed for task ':core:dsp:test'.
+761:org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':core:dsp:test'.
+929:BUILD FAILED in 3m 37s
