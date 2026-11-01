@@ -21,6 +21,8 @@ import com.sorastudio.core.common.NoteUtils
  * Playable piano keyboard with multi-touch and glissando.
  * [baseMidi] is the leftmost (white) key's note; [whiteKeyCount] controls range.
  */
+private data class KeyRect(val midi: Int, val left: Float, val top: Float, val right: Float, val bottom: Float, val black: Boolean)
+
 @Composable
 fun PianoKeyboard(
     baseMidi: Int,
@@ -36,8 +38,6 @@ fun PianoKeyboard(
     val pressedNotes = remember { mutableMapOf<PointerId, Int>() }
     var redraw by remember { mutableStateOf(0) }
     val outline = MaterialTheme.colorScheme.outline
-
-    data class KeyRect(val midi: Int, val left: Float, val top: Float, val right: Float, val bottom: Float, val black: Boolean)
 
     fun buildKeys(width: Float, height: Float): List<KeyRect> {
         val whiteWidth = width / whiteKeyCount

@@ -16,7 +16,7 @@ dependencies {
     implementation(project(":core:common"))
     implementation(project(":core:midi"))
     implementation(project(":core:dsp"))
-    implementation(libs.kotlinx.serialization.json)
+    api(libs.kotlinx.serialization.json)
     implementation(libs.kotlinx.coroutines.android)
     testImplementation(libs.junit)
 }

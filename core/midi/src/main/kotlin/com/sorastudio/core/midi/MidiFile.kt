@@ -13,6 +13,8 @@ import java.io.IOException
 object MidiFileIO {
     const val PPQ = 480
 
+    internal data class Event(val tick: Int, val isOn: Boolean, val note: MidiNote)
+
     data class ImportedTrack(val name: String, val channel: Int, val notes: List<MidiNote>, val lengthBeats: Double)
     data class ImportedFile(val bpm: Double, val tracks: List<ImportedTrack>)
 
@@ -50,11 +52,10 @@ object MidiFileIO {
             writeVarLen(track, nameBytes.size)
             track.write(nameBytes)
 
-            data class Ev(val tick: Int, val isOn: Boolean, val note: MidiNote)
-            val events = mutableListOf<Ev>()
+            val events = mutableListOf<Event>()
             for (n in notes) {
-                events.add(Ev((n.startBeats * PPQ).toInt(), true, n))
-                events.add(Ev((n.endBeats * PPQ).toInt().coerceAtLeast((n.startBeats * PPQ).toInt() + 1), false, n))
+                events.add(Event((n.startBeats * PPQ).toInt(), true, n))
+                events.add(Event((n.endBeats * PPQ).toInt().coerceAtLeast((n.startBeats * PPQ).toInt() + 1), false, n))
             }
             events.sortWith(compareBy({ it.tick }, { if (it.isOn) 1 else 0 }))
             var lastTick = 0

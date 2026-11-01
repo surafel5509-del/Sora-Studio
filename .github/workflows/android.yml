@@ -3,11 +3,12 @@ name: Android CI
 on:
   push:
     branches: ["**"]
+    branches-ignore: ["ci-reports"]
   pull_request:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
@@ -30,14 +31,32 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
 
-      - name: Run unit tests
-        run: ./gradlew test --stacktrace
+      - name: Run unit tests and build debug APK
+        shell: bash
+        run: |
+          set -o pipefail
+          ./gradlew test assembleDebug assembleDebugAndroidTest --stacktrace 2>&1 | tee build.log
 
-      - name: Build debug APK
-        run: ./gradlew assembleDebug --stacktrace
-
-      - name: Compile instrumented (UI) tests
-        run: ./gradlew assembleDebugAndroidTest --stacktrace
+      - name: Publish failure log (readable without artifact access)
+        if: failure()
+        shell: bash
+        run: |
+          cp build.log /tmp/build.log || true
+          git config user.email "ci@sorastudio.local"
+          git config user.name "SORA CI"
+          git fetch origin ci-reports:ci-reports 2>/dev/null || true
+          if git checkout ci-reports 2>/dev/null; then
+            echo "on existing ci-reports"
+          else
+            git checkout --orphan ci-reports
+            git rm -rf . >/dev/null 2>&1 || true
+          fi
+          mkdir -p reports
+          grep -nE "^e: |error:|FAILED|BUILD FAILED|What went wrong|Execution failed|Unresolved reference|Type mismatch|Overload resolution ambiguity|Cannot access|None of the following" /tmp/build.log | head -300 > reports/run-${{ github.run_id }}-errors.txt || true
+          tail -c 80000 /tmp/build.log > reports/run-${{ github.run_id }}-tail.txt || true
+          git add reports/run-${{ github.run_id }}-errors.txt reports/run-${{ github.run_id }}-tail.txt
+          git commit -m "CI failure log for run ${{ github.run_id }}" || true
+          git push origin ci-reports || true
 
       - name: Upload unit test reports
         if: always()

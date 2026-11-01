@@ -47,6 +47,8 @@ sealed class LiveEvent {
  * Threading: `render()` runs on the audio thread. Project updates and live events
  * arrive via volatile references / lock-free queues.
  */
+private data class NoteEvent(val frame: Int, val isOn: Boolean, val pitch: Int, val velocity: Float)
+
 class ProjectRenderer(
     val sampleRate: Int,
     private val assetProvider: (path: String) -> FloatArray?,
@@ -351,9 +353,11 @@ class ProjectRenderer(
                 is LiveEvent.NoteOff -> liveSynths[event.key]?.noteOff(event.midi)
                 is LiveEvent.AllOff -> liveSynths[event.key]?.allNotesOff()
                 is LiveEvent.DrumHit -> {
-                    val data = event.customData ?: kit(event.kitId)[event.drum] ?: continue
-                    val g = 0.9f * event.velocity
-                    liveSampler.trigger(data, stereo = false, rate = 1.0, gainL = g, gainR = g)
+                    val data = event.customData ?: kit(event.kitId)[event.drum]
+                    if (data != null) {
+                        val g = 0.9f * event.velocity
+                        liveSampler.trigger(data, stereo = false, rate = 1.0, gainL = g, gainR = g)
+                    }
                 }
                 is LiveEvent.SampleHit -> {
                     liveSampler.trigger(event.data, event.stereo, event.rate, event.gain, event.gain)
@@ -451,18 +455,17 @@ class ProjectRenderer(
     ) {
         val bpm = proj.bpm
         // Build (frameOffset, isOn, pitch, velocity) event list for this block.
-        data class Ev(val frame: Int, val isOn: Boolean, val pitch: Int, val velocity: Float)
-        val events = mutableListOf<Ev>()
+        val events = mutableListOf<NoteEvent>()
         for (note in clip.notes) {
             val onBeat = clip.startBeats + (note.startBeats - clip.contentOffsetBeats)
             val offBeat = clip.startBeats + (note.endBeats - clip.contentOffsetBeats)
             val onFrame = beatsToFrameOffset(onBeat, blockStartBeats, bpm, frames + 1)
             val offFrame = beatsToFrameOffset(offBeat, blockStartBeats, bpm, frames + 1)
             if (onBeat >= blockStartBeats - 1e-9 && onFrame <= frames) {
-                if (onFrame < frames) events.add(Ev(onFrame, true, note.pitch, note.velocity / 127f))
+                if (onFrame < frames) events.add(NoteEvent(onFrame, true, note.pitch, note.velocity / 127f))
             }
             if (offBeat >= blockStartBeats - 1e-9 && offFrame <= frames) {
-                events.add(Ev(min(offFrame, frames), false, note.pitch, 0f))
+                events.add(NoteEvent(min(offFrame, frames), false, note.pitch, 0f))
             }
         }
         events.sortWith(compareBy({ it.frame }, { if (it.isOn) 1 else 0 }))

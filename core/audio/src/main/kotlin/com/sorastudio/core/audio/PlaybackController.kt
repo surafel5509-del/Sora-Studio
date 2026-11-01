@@ -239,6 +239,13 @@ class PlaybackController(
         renderer.postLive(LiveEvent.StopAllLive())
     }
 
+    /** Decode files into the shared cache (e.g. after import) without playing them. */
+    fun preloadFiles(files: List<File>) {
+        scope.launch {
+            withContext(Dispatchers.IO) { assetCache.ensureLoaded(files) }
+        }
+    }
+
     // ------------------------------------------------------------- meters
 
     fun trackMeter(trackId: String): MeterState? = renderer.meterFor(trackId)

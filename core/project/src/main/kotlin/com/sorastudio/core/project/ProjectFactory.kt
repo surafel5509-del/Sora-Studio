@@ -29,12 +29,10 @@ object ProjectFactory {
     fun empty(name: String): SProject {
         val pattern = SDrumPattern.emptyPattern()
         var project = SProject(name = name, patterns = listOf(pattern))
-        var track: STrack
-        project = ProjectOps.addTrack(project, TrackType.DRUM, "Drums").also { track = it.second }.first
+        project = ProjectOps.addTrack(project, TrackType.DRUM, "Drums").first
         project = ProjectOps.addTrack(project, TrackType.INSTRUMENT, "Keys").first
-        project = ProjectOps.addTrack(project, TrackType.INSTRUMENT, "Bass").also { (_, t) ->
-            project = ProjectOps.updateTrack(project, t.id) { it.copy(presetId = "bass-sub") }
-        }.first
+        val (withBass, bass) = ProjectOps.addTrack(project, TrackType.INSTRUMENT, "Bass")
+        project = ProjectOps.updateTrack(withBass, bass.id) { it.copy(presetId = "bass-sub") }
         project = ProjectOps.addTrack(project, TrackType.VOCAL, "Vocal").first
         return project
     }

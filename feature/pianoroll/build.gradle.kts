@@ -49,5 +49,6 @@ dependencies {
     implementation(project(":core:audio"))
     implementation(project(":core:midi"))
     implementation(project(":core:common"))
+    implementation(project(":core:dsp"))
     testImplementation(libs.junit)
 }
