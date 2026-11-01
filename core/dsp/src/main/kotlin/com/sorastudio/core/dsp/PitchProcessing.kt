@@ -27,23 +27,56 @@ object TimePitch {
         if (input.isEmpty()) return FloatArray(0)
         val f = factor.coerceIn(0.25, 4.0)
         if (abs(f - 1.0) < 0.001) return input.copyOf()
+        // WSOLA: like OLA, but each new grain is nudged (± tolerance) to the offset
+        // whose waveform best correlates with the natural continuation of the
+        // previous grain. This keeps periodic material phase-coherent.
         val hopOut = windowSize / 4
+        val overlap = windowSize - hopOut
+        val tolerance = windowSize / 4
         val hopIn = hopOut / f
-        val outLength = (input.size * f).toInt() + windowSize
+        val outLength = (input.size * f).toInt() + windowSize * 2
         val out = FloatArray(outLength)
         val norm = FloatArray(outLength)
         val window = FloatArray(windowSize) { i -> (0.5 - 0.5 * cos(2.0 * PI * i / (windowSize - 1))).toFloat() }
+        val prevGrain = FloatArray(windowSize)
+        var hasPrev = false
         var inPos = 0.0
         var outPos = 0
-        while (outPos + windowSize < outLength && inPos < input.size) {
-            val src = inPos.toInt()
+        while (outPos + windowSize < outLength) {
+            var src = inPos.toInt()
+            if (src >= input.size) break
+            if (hasPrev && overlap > 0) {
+                var bestDelta = 0
+                var bestCorr = Double.NEGATIVE_INFINITY
+                var delta = -tolerance
+                while (delta <= tolerance) {
+                    val candidate = src + delta
+                    if (candidate >= 0 && candidate + overlap < input.size) {
+                        var corr = 0.0
+                        var i = 0
+                        // Natural continuation of the previous grain starts at prevGrain[hopOut].
+                        while (i < overlap) {
+                            corr += prevGrain[hopOut + i] * input[candidate + i]
+                            i++
+                        }
+                        if (corr > bestCorr) {
+                            bestCorr = corr
+                            bestDelta = delta
+                        }
+                    }
+                    delta++
+                }
+                src += bestDelta
+            }
             for (i in 0 until windowSize) {
                 val sIdx = src + i
-                if (sIdx >= input.size) break
+                val v = if (sIdx in input.indices) input[sIdx] else 0f
+                prevGrain[i] = v
                 val w = window[i]
-                out[outPos + i] += input[sIdx] * w
+                out[outPos + i] += v * w
                 norm[outPos + i] += w
             }
+            hasPrev = true
             inPos += hopIn
             outPos += hopOut
         }
