@@ -1,0 +1,139 @@
+name: Android CI
+
+on:
+  push:
+    branches:
+      - "**"
+      - "!ci-reports"
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Unit tests + Debug APK
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v3
+
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+
+      - name: Run unit tests and build debug APK
+        shell: bash
+        run: |
+          set -o pipefail
+          ./gradlew test assembleDebug assembleDebugAndroidTest --stacktrace 2>&1 | tee build.log
+
+      - name: Publish failure log (readable without artifact access)
+        if: failure()
+        shell: bash
+        run: |
+          cp build.log /tmp/build.log || true
+          git config user.email "ci@sorastudio.local"
+          git config user.name "SORA CI"
+          git fetch origin ci-reports:ci-reports 2>/dev/null || true
+          if git checkout ci-reports 2>/dev/null; then
+            echo "on existing ci-reports"
+          else
+            git checkout --orphan ci-reports
+            git rm -rf . >/dev/null 2>&1 || true
+          fi
+          mkdir -p reports
+          grep -nE "^e: |error:|FAILED|BUILD FAILED|What went wrong|Execution failed|Unresolved reference|Type mismatch|Overload resolution ambiguity|Cannot access|None of the following" /tmp/build.log | head -300 > reports/run-${{ github.run_id }}-errors.txt || true
+          tail -c 80000 /tmp/build.log > reports/run-${{ github.run_id }}-tail.txt || true
+          git add reports/run-${{ github.run_id }}-errors.txt reports/run-${{ github.run_id }}-tail.txt
+          git commit -m "CI failure log for run ${{ github.run_id }}" || true
+          git push origin ci-reports || true
+
+      - name: Upload unit test reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unit-test-reports
+          path: |
+            **/build/reports/tests/**
+            **/build/test-results/**
+          if-no-files-found: ignore
+
+      - name: Upload debug APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: sora-studio-debug-apk
+          path: app/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
+
+  instrumented-tests:
+    name: UI tests (emulator)
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    # Runs on manual dispatch, or when a commit message contains [ui-tests].
+    if: github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[ui-tests]')
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v3
+
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+
+      - name: Run instrumented tests
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 30
+          arch: x86_64
+          disable-animations: true
+          script: |
+            ./gradlew connectedDebugAndroidTest --stacktrace > uitest.log 2>&1 || echo $? > uitest.status
+            tail -c 60000 uitest.log
+            test ! -f uitest.status
+
+      - name: Publish UI test failure log
+        if: failure()
+        shell: bash
+        run: |
+          cp uitest.log /tmp/uitest.log || true
+          find app/build/outputs/androidTest-results -name "*.xml" -exec cat {} + > /tmp/uitest-results.xml 2>/dev/null || true
+          git config user.email "ci@sorastudio.local"
+          git config user.name "SORA CI"
+          git fetch origin ci-reports:ci-reports 2>/dev/null || true
+          if git checkout ci-reports 2>/dev/null; then
+            echo "on existing ci-reports"
+          else
+            git checkout --orphan ci-reports
+            git rm -rf . >/dev/null 2>&1 || true
+          fi
+          mkdir -p reports
+          grep -nE "FAILED|AssertionError|error:|Caused by|INSTRUMENTATION|Process crashed" /tmp/uitest.log | head -200 > reports/run-${{ github.run_id }}-uitest-errors.txt || true
+          tail -c 80000 /tmp/uitest.log > reports/run-${{ github.run_id }}-uitest-tail.txt || true
+          cp /tmp/uitest-results.xml reports/run-${{ github.run_id }}-uitest-results.xml || true
+          git add reports/ || true
+          git commit -m "CI UI test failure log for run ${{ github.run_id }}" || true
+          git push origin ci-reports || true
