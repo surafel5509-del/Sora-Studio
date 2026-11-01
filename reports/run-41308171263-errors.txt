@@ -1,0 +1,11 @@
+658:w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/drums/src/main/kotlin/com/sorastudio/feature/drums/DrumsScreen.kt:137:65 Type mismatch: inferred type is String? but String was expected
+659:w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/drums/src/main/kotlin/com/sorastudio/feature/drums/DrumsScreen.kt:233:96 Type mismatch: inferred type is String? but String was expected
+680:w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/instruments/src/main/kotlin/com/sorastudio/feature/instruments/InstrumentsScreen.kt:179:65 Type mismatch: inferred type is String? but String was expected
+759:w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/drums/src/main/kotlin/com/sorastudio/feature/drums/DrumsScreen.kt:137:65 Type mismatch: inferred type is String? but String was expected
+760:w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/drums/src/main/kotlin/com/sorastudio/feature/drums/DrumsScreen.kt:233:96 Type mismatch: inferred type is String? but String was expected
+783:w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/instruments/src/main/kotlin/com/sorastudio/feature/instruments/InstrumentsScreen.kt:179:65 Type mismatch: inferred type is String? but String was expected
+1678:> Task :feature:arrangement:packageDebugAndroidTest FAILED
+1687:* What went wrong:
+1688:Execution failed for task ':feature:arrangement:packageDebugAndroidTest'.
+1697:org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':feature:arrangement:packageDebugAndroidTest'.
+1913:BUILD FAILED in 3m 38s

@@ -1,0 +1,1247 @@
+ork/Sora-Studio/Sora-Studio/feature/export/src/main/kotlin/com/sorastudio/feature/export/ExportScreen.kt:320:17 'LinearProgressIndicator(Float, Modifier = ..., Color = ..., Color = ..., StrokeCap = ...): Unit' is deprecated. Use the overload that takes `progress` as a lambda
+
+> Task :feature:export:compileDebugJavaWithJavac NO-SOURCE
+> Task :feature:export:bundleLibCompileToJarDebug
+> Task :feature:effects:compileDebugKotlin
+> Task :feature:effects:compileDebugJavaWithJavac NO-SOURCE
+> Task :feature:effects:bundleLibCompileToJarDebug
+> Task :feature:home:compileDebugKotlin
+> Task :feature:home:compileDebugJavaWithJavac NO-SOURCE
+> Task :feature:home:bundleLibCompileToJarDebug
+
+> Task :feature:instruments:compileDebugKotlin
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/instruments/src/main/kotlin/com/sorastudio/feature/instruments/InstrumentsScreen.kt:179:65 Type mismatch: inferred type is String? but String was expected
+
+> Task :feature:mixer:compileDebugKotlin
+> Task :feature:instruments:compileDebugJavaWithJavac NO-SOURCE
+> Task :feature:mixer:compileDebugJavaWithJavac NO-SOURCE
+> Task :feature:mixer:bundleLibCompileToJarDebug
+> Task :feature:instruments:bundleLibCompileToJarDebug
+> Task :feature:pianoroll:compileDebugKotlin
+> Task :feature:pianoroll:compileDebugJavaWithJavac NO-SOURCE
+> Task :feature:pianoroll:bundleLibCompileToJarDebug
+
+> Task :feature:studio:compileDebugKotlin
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/studio/src/main/kotlin/com/sorastudio/feature/studio/StudioScreen.kt:63:43 'ShowChart: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ShowChart
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/studio/src/main/kotlin/com/sorastudio/feature/studio/StudioScreen.kt:113:37 'Undo: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.Undo
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/studio/src/main/kotlin/com/sorastudio/feature/studio/StudioScreen.kt:121:37 'Redo: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.Redo
+
+> Task :feature:studio:compileDebugJavaWithJavac NO-SOURCE
+> Task :feature:studio:bundleLibCompileToJarDebug
+> Task :feature:home:bundleLibRuntimeToJarDebug
+> Task :feature:studio:bundleLibRuntimeToJarDebug
+> Task :feature:arrangement:bundleLibRuntimeToJarDebug
+> Task :feature:pianoroll:bundleLibRuntimeToJarDebug
+> Task :feature:drums:bundleLibRuntimeToJarDebug
+> Task :feature:instruments:bundleLibRuntimeToJarDebug
+> Task :feature:mixer:bundleLibRuntimeToJarDebug
+> Task :feature:effects:bundleLibRuntimeToJarDebug
+> Task :feature:automation:bundleLibRuntimeToJarDebug
+> Task :feature:export:bundleLibRuntimeToJarDebug
+> Task :core:database:bundleLibRuntimeToJarDebug
+> Task :core:audio:bundleLibRuntimeToJarDebug
+> Task :core:audio:processDebugJavaRes
+> Task :core:database:processDebugJavaRes
+> Task :feature:arrangement:processDebugJavaRes
+> Task :feature:automation:processDebugJavaRes
+> Task :feature:drums:processDebugJavaRes
+> Task :feature:effects:processDebugJavaRes
+> Task :feature:export:processDebugJavaRes
+> Task :feature:home:processDebugJavaRes
+> Task :feature:instruments:processDebugJavaRes
+> Task :feature:mixer:processDebugJavaRes
+> Task :feature:pianoroll:processDebugJavaRes
+> Task :feature:studio:processDebugJavaRes
+> Task :core:audio:compileReleaseJavaWithJavac NO-SOURCE
+> Task :core:audio:bundleLibCompileToJarRelease
+
+> Task :feature:recording:compileDebugKotlin
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/recording/src/main/kotlin/com/sorastudio/feature/recording/AudioEditorScreen.kt:148:70 'Undo: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.Undo
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/recording/src/main/kotlin/com/sorastudio/feature/recording/RecordingScreen.kt:134:13 Variable 'track' is never used
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/recording/src/main/kotlin/com/sorastudio/feature/recording/RecordingScreen.kt:472:48 'PlaylistAdd: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.PlaylistAdd
+
+> Task :feature:recording:compileDebugJavaWithJavac NO-SOURCE
+> Task :feature:recording:bundleLibCompileToJarDebug
+> Task :feature:recording:bundleLibRuntimeToJarDebug
+> Task :feature:recording:processDebugJavaRes
+> Task :core:database:compileReleaseKotlin
+
+> Task :feature:sounds:compileDebugKotlin
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/sounds/src/main/kotlin/com/sorastudio/feature/sounds/SoundsScreen.kt:411:9 Variable 'project' is never used
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/sounds/src/main/kotlin/com/sorastudio/feature/sounds/SoundsScreen.kt:488:44 'PlaylistAdd: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.PlaylistAdd
+
+> Task :feature:sounds:compileDebugJavaWithJavac NO-SOURCE
+> Task :feature:sounds:bundleLibCompileToJarDebug
+> Task :feature:sounds:bundleLibRuntimeToJarDebug
+> Task :feature:sounds:processDebugJavaRes
+> Task :core:database:compileReleaseJavaWithJavac
+> Task :core:database:bundleLibCompileToJarRelease
+> Task :feature:vocal:compileDebugKotlin
+> Task :feature:vocal:compileDebugJavaWithJavac NO-SOURCE
+> Task :feature:vocal:bundleLibCompileToJarDebug
+> Task :feature:automation:compileReleaseKotlin
+> Task :feature:vocal:bundleLibRuntimeToJarDebug
+> Task :feature:vocal:processDebugJavaRes
+> Task :feature:automation:compileReleaseJavaWithJavac NO-SOURCE
+> Task :feature:automation:bundleLibCompileToJarRelease
+> Task :feature:arrangement:compileReleaseKotlin
+> Task :feature:arrangement:compileReleaseJavaWithJavac NO-SOURCE
+> Task :feature:arrangement:bundleLibCompileToJarRelease
+
+> Task :feature:drums:compileReleaseKotlin
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/drums/src/main/kotlin/com/sorastudio/feature/drums/DrumsScreen.kt:137:65 Type mismatch: inferred type is String? but String was expected
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/drums/src/main/kotlin/com/sorastudio/feature/drums/DrumsScreen.kt:233:96 Type mismatch: inferred type is String? but String was expected
+
+> Task :feature:drums:compileReleaseJavaWithJavac NO-SOURCE
+> Task :feature:drums:bundleLibCompileToJarRelease
+> Task :app:kaptGenerateStubsDebugKotlin
+> Task :feature:effects:compileReleaseKotlin
+> Task :feature:effects:compileReleaseJavaWithJavac NO-SOURCE
+> Task :feature:effects:bundleLibCompileToJarRelease
+
+> Task :feature:export:compileReleaseKotlin
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/export/src/main/kotlin/com/sorastudio/feature/export/ExportScreen.kt:320:17 'LinearProgressIndicator(Float, Modifier = ..., Color = ..., Color = ..., StrokeCap = ...): Unit' is deprecated. Use the overload that takes `progress` as a lambda
+
+> Task :feature:home:compileReleaseKotlin
+> Task :feature:home:compileReleaseJavaWithJavac NO-SOURCE
+> Task :feature:export:compileReleaseJavaWithJavac NO-SOURCE
+> Task :feature:export:bundleLibCompileToJarRelease
+> Task :feature:home:bundleLibCompileToJarRelease
+> Task :app:kaptDebugKotlin
+> Task :feature:mixer:compileReleaseKotlin
+> Task :feature:mixer:compileReleaseJavaWithJavac NO-SOURCE
+> Task :feature:mixer:bundleLibCompileToJarRelease
+
+> Task :feature:instruments:compileReleaseKotlin
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/instruments/src/main/kotlin/com/sorastudio/feature/instruments/InstrumentsScreen.kt:179:65 Type mismatch: inferred type is String? but String was expected
+
+> Task :feature:instruments:compileReleaseJavaWithJavac NO-SOURCE
+> Task :feature:instruments:bundleLibCompileToJarRelease
+> Task :feature:settings:compileReleaseJavaWithJavac NO-SOURCE
+> Task :feature:settings:bundleLibCompileToJarRelease
+> Task :feature:pianoroll:compileReleaseKotlin
+> Task :feature:pianoroll:compileReleaseJavaWithJavac NO-SOURCE
+> Task :feature:pianoroll:bundleLibCompileToJarRelease
+
+> Task :feature:studio:compileReleaseKotlin
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/studio/src/main/kotlin/com/sorastudio/feature/studio/StudioScreen.kt:63:43 'ShowChart: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ShowChart
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/studio/src/main/kotlin/com/sorastudio/feature/studio/StudioScreen.kt:113:37 'Undo: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.Undo
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/studio/src/main/kotlin/com/sorastudio/feature/studio/StudioScreen.kt:121:37 'Redo: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.Redo
+
+> Task :feature:studio:compileReleaseJavaWithJavac NO-SOURCE
+> Task :feature:studio:bundleLibCompileToJarRelease
+
+> Task :feature:sounds:compileReleaseKotlin
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/sounds/src/main/kotlin/com/sorastudio/feature/sounds/SoundsScreen.kt:411:9 Variable 'project' is never used
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/sounds/src/main/kotlin/com/sorastudio/feature/sounds/SoundsScreen.kt:488:44 'PlaylistAdd: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.PlaylistAdd
+
+> Task :feature:sounds:compileReleaseJavaWithJavac NO-SOURCE
+> Task :feature:sounds:bundleLibCompileToJarRelease
+> Task :feature:home:bundleLibRuntimeToJarRelease
+> Task :feature:studio:bundleLibRuntimeToJarRelease
+> Task :feature:arrangement:bundleLibRuntimeToJarRelease
+> Task :feature:pianoroll:bundleLibRuntimeToJarRelease
+> Task :feature:drums:bundleLibRuntimeToJarRelease
+> Task :feature:instruments:bundleLibRuntimeToJarRelease
+> Task :feature:mixer:bundleLibRuntimeToJarRelease
+> Task :feature:effects:bundleLibRuntimeToJarRelease
+> Task :feature:automation:bundleLibRuntimeToJarRelease
+> Task :feature:sounds:bundleLibRuntimeToJarRelease
+> Task :feature:export:bundleLibRuntimeToJarRelease
+> Task :feature:settings:bundleLibRuntimeToJarRelease
+> Task :core:designsystem:bundleLibRuntimeToJarRelease
+> Task :core:database:bundleLibRuntimeToJarRelease
+> Task :core:audio:bundleLibRuntimeToJarRelease
+> Task :core:storage:bundleLibRuntimeToJarRelease
+> Task :app:compileDebugKotlin
+> Task :core:audio:processReleaseJavaRes
+> Task :core:database:processReleaseJavaRes
+
+> Task :feature:recording:compileReleaseKotlin
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/recording/src/main/kotlin/com/sorastudio/feature/recording/AudioEditorScreen.kt:148:70 'Undo: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.Undo
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/recording/src/main/kotlin/com/sorastudio/feature/recording/RecordingScreen.kt:134:13 Variable 'track' is never used
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/recording/src/main/kotlin/com/sorastudio/feature/recording/RecordingScreen.kt:472:48 'PlaylistAdd: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.PlaylistAdd
+
+> Task :core:designsystem:processReleaseJavaRes
+> Task :core:storage:processReleaseJavaRes
+> Task :feature:arrangement:processReleaseJavaRes
+> Task :feature:automation:processReleaseJavaRes
+> Task :feature:recording:compileReleaseJavaWithJavac NO-SOURCE
+> Task :feature:drums:processReleaseJavaRes
+> Task :feature:recording:bundleLibCompileToJarRelease
+> Task :feature:recording:bundleLibRuntimeToJarRelease
+> Task :feature:effects:processReleaseJavaRes
+> Task :feature:export:processReleaseJavaRes
+> Task :feature:home:processReleaseJavaRes
+> Task :feature:instruments:processReleaseJavaRes
+> Task :feature:mixer:processReleaseJavaRes
+> Task :feature:pianoroll:processReleaseJavaRes
+> Task :feature:recording:processReleaseJavaRes
+> Task :feature:settings:processReleaseJavaRes
+> Task :feature:sounds:processReleaseJavaRes
+> Task :feature:studio:processReleaseJavaRes
+> Task :core:audio:compileDebugUnitTestKotlin NO-SOURCE
+> Task :core:audio:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :core:audio:processDebugUnitTestJavaRes NO-SOURCE
+> Task :core:audio:testDebugUnitTest NO-SOURCE
+> Task :core:audio:compileReleaseUnitTestKotlin NO-SOURCE
+> Task :core:audio:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :core:audio:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :core:audio:testReleaseUnitTest NO-SOURCE
+> Task :core:audio:test UP-TO-DATE
+> Task :core:designsystem:compileDebugUnitTestKotlin NO-SOURCE
+> Task :core:designsystem:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :core:designsystem:processDebugUnitTestJavaRes NO-SOURCE
+> Task :core:designsystem:testDebugUnitTest NO-SOURCE
+> Task :core:designsystem:compileReleaseUnitTestKotlin NO-SOURCE
+> Task :core:designsystem:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :core:designsystem:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :core:designsystem:testReleaseUnitTest NO-SOURCE
+> Task :core:designsystem:test UP-TO-DATE
+> Task :core:database:kaptGenerateStubsDebugUnitTestKotlin
+> Task :core:database:kaptDebugUnitTestKotlin
+> Task :core:database:compileDebugUnitTestKotlin NO-SOURCE
+> Task :core:database:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :core:database:processDebugUnitTestJavaRes NO-SOURCE
+> Task :core:database:testDebugUnitTest NO-SOURCE
+> Task :core:database:kaptGenerateStubsReleaseUnitTestKotlin
+> Task :core:database:kaptReleaseUnitTestKotlin
+> Task :core:database:compileReleaseUnitTestKotlin NO-SOURCE
+> Task :core:database:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :core:database:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :core:database:testReleaseUnitTest NO-SOURCE
+> Task :core:database:test UP-TO-DATE
+> Task :core:storage:compileDebugUnitTestKotlin NO-SOURCE
+> Task :core:storage:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :core:storage:processDebugUnitTestJavaRes NO-SOURCE
+> Task :core:storage:testDebugUnitTest NO-SOURCE
+> Task :core:storage:compileReleaseUnitTestKotlin NO-SOURCE
+> Task :core:storage:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :core:storage:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :core:storage:testReleaseUnitTest NO-SOURCE
+> Task :core:storage:test UP-TO-DATE
+> Task :feature:arrangement:compileDebugUnitTestKotlin NO-SOURCE
+> Task :feature:arrangement:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :feature:arrangement:processDebugUnitTestJavaRes NO-SOURCE
+> Task :feature:arrangement:testDebugUnitTest NO-SOURCE
+> Task :feature:arrangement:compileReleaseUnitTestKotlin NO-SOURCE
+> Task :feature:arrangement:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :feature:arrangement:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :feature:arrangement:testReleaseUnitTest NO-SOURCE
+> Task :feature:arrangement:test UP-TO-DATE
+> Task :feature:automation:compileDebugUnitTestKotlin NO-SOURCE
+> Task :feature:automation:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :feature:automation:processDebugUnitTestJavaRes NO-SOURCE
+> Task :feature:automation:testDebugUnitTest NO-SOURCE
+> Task :feature:automation:compileReleaseUnitTestKotlin NO-SOURCE
+> Task :feature:automation:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :feature:automation:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :feature:automation:testReleaseUnitTest NO-SOURCE
+> Task :feature:automation:test UP-TO-DATE
+> Task :feature:drums:compileDebugUnitTestKotlin NO-SOURCE
+> Task :feature:drums:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :feature:drums:processDebugUnitTestJavaRes NO-SOURCE
+> Task :feature:drums:testDebugUnitTest NO-SOURCE
+> Task :feature:drums:compileReleaseUnitTestKotlin NO-SOURCE
+> Task :feature:drums:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :feature:drums:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :feature:drums:testReleaseUnitTest NO-SOURCE
+> Task :feature:drums:test UP-TO-DATE
+> Task :feature:effects:compileDebugUnitTestKotlin NO-SOURCE
+> Task :feature:effects:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :feature:effects:processDebugUnitTestJavaRes NO-SOURCE
+> Task :feature:effects:testDebugUnitTest NO-SOURCE
+> Task :feature:effects:compileReleaseUnitTestKotlin NO-SOURCE
+> Task :feature:effects:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :feature:effects:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :feature:effects:testReleaseUnitTest NO-SOURCE
+> Task :feature:effects:test UP-TO-DATE
+> Task :feature:export:compileDebugUnitTestKotlin NO-SOURCE
+> Task :feature:export:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :feature:export:processDebugUnitTestJavaRes NO-SOURCE
+> Task :feature:export:testDebugUnitTest NO-SOURCE
+> Task :feature:export:compileReleaseUnitTestKotlin NO-SOURCE
+> Task :feature:export:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :feature:export:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :feature:export:testReleaseUnitTest NO-SOURCE
+> Task :feature:export:test UP-TO-DATE
+> Task :feature:home:compileDebugUnitTestKotlin NO-SOURCE
+> Task :feature:home:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :feature:home:processDebugUnitTestJavaRes NO-SOURCE
+> Task :feature:home:testDebugUnitTest NO-SOURCE
+> Task :feature:home:compileReleaseUnitTestKotlin NO-SOURCE
+> Task :feature:home:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :feature:home:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :feature:home:testReleaseUnitTest NO-SOURCE
+> Task :feature:home:test UP-TO-DATE
+> Task :feature:instruments:compileDebugUnitTestKotlin NO-SOURCE
+> Task :feature:instruments:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :feature:instruments:processDebugUnitTestJavaRes NO-SOURCE
+> Task :feature:instruments:testDebugUnitTest NO-SOURCE
+> Task :feature:instruments:compileReleaseUnitTestKotlin NO-SOURCE
+> Task :feature:instruments:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :feature:instruments:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :feature:instruments:testReleaseUnitTest NO-SOURCE
+> Task :feature:instruments:test UP-TO-DATE
+> Task :feature:mixer:compileDebugUnitTestKotlin NO-SOURCE
+> Task :feature:mixer:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :feature:mixer:processDebugUnitTestJavaRes NO-SOURCE
+> Task :feature:mixer:testDebugUnitTest NO-SOURCE
+> Task :feature:mixer:compileReleaseUnitTestKotlin NO-SOURCE
+> Task :feature:mixer:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :feature:mixer:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :feature:mixer:testReleaseUnitTest NO-SOURCE
+> Task :feature:mixer:test UP-TO-DATE
+> Task :feature:pianoroll:preDebugUnitTestBuild UP-TO-DATE
+> Task :feature:pianoroll:generateDebugUnitTestStubRFile
+> Task :feature:pianoroll:compileDebugUnitTestKotlin NO-SOURCE
+> Task :feature:pianoroll:javaPreCompileDebugUnitTest FROM-CACHE
+> Task :feature:pianoroll:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :feature:pianoroll:processDebugUnitTestJavaRes NO-SOURCE
+> Task :feature:pianoroll:testDebugUnitTest NO-SOURCE
+> Task :feature:pianoroll:preReleaseUnitTestBuild UP-TO-DATE
+> Task :feature:pianoroll:generateReleaseUnitTestStubRFile
+> Task :feature:pianoroll:compileReleaseUnitTestKotlin NO-SOURCE
+> Task :feature:pianoroll:javaPreCompileReleaseUnitTest FROM-CACHE
+> Task :feature:pianoroll:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :feature:pianoroll:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :feature:pianoroll:testReleaseUnitTest NO-SOURCE
+> Task :feature:pianoroll:test UP-TO-DATE
+> Task :feature:recording:preDebugUnitTestBuild UP-TO-DATE
+> Task :feature:recording:generateDebugUnitTestStubRFile
+> Task :feature:recording:compileDebugUnitTestKotlin NO-SOURCE
+> Task :feature:recording:javaPreCompileDebugUnitTest FROM-CACHE
+> Task :feature:recording:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :feature:recording:processDebugUnitTestJavaRes NO-SOURCE
+> Task :core:project:compileTestKotlin
+> Task :feature:recording:testDebugUnitTest NO-SOURCE
+> Task :feature:recording:preReleaseUnitTestBuild UP-TO-DATE
+> Task :core:project:compileTestJava NO-SOURCE
+> Task :core:project:testClasses UP-TO-DATE
+> Task :feature:recording:generateReleaseUnitTestStubRFile
+> Task :feature:recording:compileReleaseUnitTestKotlin NO-SOURCE
+> Task :feature:recording:javaPreCompileReleaseUnitTest FROM-CACHE
+> Task :feature:recording:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :feature:recording:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :feature:recording:testReleaseUnitTest NO-SOURCE
+> Task :feature:recording:test UP-TO-DATE
+> Task :feature:settings:preDebugUnitTestBuild UP-TO-DATE
+> Task :feature:settings:generateDebugUnitTestStubRFile
+> Task :feature:settings:compileDebugUnitTestKotlin NO-SOURCE
+> Task :feature:settings:javaPreCompileDebugUnitTest FROM-CACHE
+> Task :feature:settings:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :feature:settings:processDebugUnitTestJavaRes NO-SOURCE
+> Task :feature:settings:testDebugUnitTest NO-SOURCE
+> Task :feature:settings:preReleaseUnitTestBuild UP-TO-DATE
+> Task :feature:settings:generateReleaseUnitTestStubRFile
+> Task :feature:settings:compileReleaseUnitTestKotlin NO-SOURCE
+> Task :feature:settings:javaPreCompileReleaseUnitTest FROM-CACHE
+> Task :feature:settings:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :feature:settings:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :feature:settings:testReleaseUnitTest NO-SOURCE
+> Task :feature:settings:test UP-TO-DATE
+> Task :feature:sounds:preDebugUnitTestBuild UP-TO-DATE
+> Task :feature:sounds:generateDebugUnitTestStubRFile
+> Task :feature:sounds:compileDebugUnitTestKotlin NO-SOURCE
+> Task :feature:sounds:javaPreCompileDebugUnitTest FROM-CACHE
+> Task :feature:sounds:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :feature:sounds:processDebugUnitTestJavaRes NO-SOURCE
+> Task :feature:sounds:testDebugUnitTest NO-SOURCE
+> Task :feature:sounds:preReleaseUnitTestBuild UP-TO-DATE
+> Task :feature:sounds:generateReleaseUnitTestStubRFile
+> Task :feature:sounds:compileReleaseUnitTestKotlin NO-SOURCE
+> Task :feature:sounds:javaPreCompileReleaseUnitTest FROM-CACHE
+> Task :feature:sounds:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :feature:sounds:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :feature:sounds:testReleaseUnitTest NO-SOURCE
+> Task :feature:sounds:test UP-TO-DATE
+> Task :feature:studio:preDebugUnitTestBuild UP-TO-DATE
+> Task :feature:studio:generateDebugUnitTestStubRFile
+> Task :feature:studio:compileDebugUnitTestKotlin NO-SOURCE
+> Task :feature:studio:javaPreCompileDebugUnitTest FROM-CACHE
+> Task :feature:studio:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :feature:studio:processDebugUnitTestJavaRes NO-SOURCE
+> Task :feature:studio:testDebugUnitTest NO-SOURCE
+> Task :feature:studio:preReleaseUnitTestBuild UP-TO-DATE
+> Task :feature:studio:generateReleaseUnitTestStubRFile
+> Task :feature:studio:compileReleaseUnitTestKotlin NO-SOURCE
+> Task :feature:studio:javaPreCompileReleaseUnitTest FROM-CACHE
+> Task :feature:studio:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :feature:studio:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :feature:studio:testReleaseUnitTest NO-SOURCE
+> Task :feature:studio:test UP-TO-DATE
+> Task :feature:vocal:preDebugUnitTestBuild UP-TO-DATE
+> Task :feature:vocal:generateDebugUnitTestStubRFile
+> Task :feature:vocal:compileDebugUnitTestKotlin NO-SOURCE
+> Task :feature:vocal:javaPreCompileDebugUnitTest FROM-CACHE
+> Task :feature:vocal:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :feature:vocal:processDebugUnitTestJavaRes NO-SOURCE
+> Task :feature:vocal:testDebugUnitTest NO-SOURCE
+> Task :feature:vocal:preReleaseUnitTestBuild UP-TO-DATE
+> Task :feature:vocal:generateReleaseUnitTestStubRFile
+> Task :feature:vocal:javaPreCompileReleaseUnitTest FROM-CACHE
+> Task :core:audio:mergeDebugShaders
+> Task :core:audio:compileDebugShaders NO-SOURCE
+> Task :core:audio:generateDebugAssets UP-TO-DATE
+> Task :core:audio:packageDebugAssets
+> Task :core:database:mergeDebugShaders
+> Task :core:database:compileDebugShaders NO-SOURCE
+> Task :core:database:generateDebugAssets UP-TO-DATE
+> Task :core:database:packageDebugAssets
+> Task :core:designsystem:mergeDebugShaders
+> Task :core:designsystem:compileDebugShaders NO-SOURCE
+> Task :core:designsystem:generateDebugAssets UP-TO-DATE
+> Task :core:designsystem:packageDebugAssets
+> Task :core:storage:mergeDebugShaders
+> Task :core:storage:compileDebugShaders NO-SOURCE
+> Task :core:storage:generateDebugAssets UP-TO-DATE
+> Task :core:storage:packageDebugAssets
+> Task :feature:arrangement:mergeDebugShaders
+> Task :feature:arrangement:compileDebugShaders NO-SOURCE
+> Task :feature:arrangement:generateDebugAssets UP-TO-DATE
+> Task :feature:arrangement:packageDebugAssets
+> Task :feature:automation:mergeDebugShaders
+> Task :feature:automation:compileDebugShaders NO-SOURCE
+> Task :feature:automation:generateDebugAssets UP-TO-DATE
+> Task :feature:automation:packageDebugAssets
+> Task :feature:drums:mergeDebugShaders
+> Task :feature:drums:compileDebugShaders NO-SOURCE
+> Task :feature:drums:generateDebugAssets UP-TO-DATE
+> Task :feature:drums:packageDebugAssets
+> Task :feature:effects:mergeDebugShaders
+> Task :feature:effects:compileDebugShaders NO-SOURCE
+> Task :feature:effects:generateDebugAssets UP-TO-DATE
+> Task :feature:effects:packageDebugAssets
+> Task :feature:export:mergeDebugShaders
+> Task :feature:export:compileDebugShaders NO-SOURCE
+> Task :feature:export:generateDebugAssets UP-TO-DATE
+> Task :feature:export:packageDebugAssets
+> Task :feature:home:mergeDebugShaders
+> Task :feature:home:compileDebugShaders NO-SOURCE
+> Task :feature:home:generateDebugAssets UP-TO-DATE
+> Task :feature:home:packageDebugAssets
+> Task :feature:instruments:mergeDebugShaders
+> Task :feature:instruments:compileDebugShaders NO-SOURCE
+> Task :feature:instruments:generateDebugAssets UP-TO-DATE
+> Task :feature:instruments:packageDebugAssets
+> Task :feature:mixer:mergeDebugShaders
+> Task :feature:mixer:compileDebugShaders NO-SOURCE
+> Task :feature:mixer:generateDebugAssets UP-TO-DATE
+> Task :feature:mixer:packageDebugAssets
+> Task :feature:pianoroll:mergeDebugShaders
+> Task :feature:pianoroll:compileDebugShaders NO-SOURCE
+> Task :feature:pianoroll:generateDebugAssets UP-TO-DATE
+> Task :feature:pianoroll:packageDebugAssets
+> Task :feature:recording:mergeDebugShaders
+> Task :feature:recording:compileDebugShaders NO-SOURCE
+> Task :feature:recording:generateDebugAssets UP-TO-DATE
+> Task :feature:recording:packageDebugAssets
+> Task :feature:settings:mergeDebugShaders
+> Task :feature:settings:compileDebugShaders NO-SOURCE
+> Task :feature:settings:generateDebugAssets UP-TO-DATE
+> Task :feature:settings:packageDebugAssets
+> Task :feature:sounds:mergeDebugShaders
+> Task :feature:sounds:compileDebugShaders NO-SOURCE
+> Task :feature:sounds:generateDebugAssets UP-TO-DATE
+> Task :feature:sounds:packageDebugAssets
+> Task :feature:studio:mergeDebugShaders
+> Task :feature:studio:compileDebugShaders NO-SOURCE
+> Task :feature:studio:generateDebugAssets UP-TO-DATE
+> Task :feature:studio:packageDebugAssets
+> Task :feature:vocal:mergeDebugShaders
+> Task :feature:vocal:compileDebugShaders NO-SOURCE
+> Task :feature:vocal:generateDebugAssets UP-TO-DATE
+> Task :feature:vocal:packageDebugAssets
+> Task :core:project:test
+> Task :feature:vocal:compileReleaseKotlin
+> Task :feature:vocal:compileReleaseJavaWithJavac NO-SOURCE
+> Task :feature:vocal:bundleLibCompileToJarRelease
+> Task :feature:vocal:bundleLibRuntimeToJarRelease
+> Task :feature:vocal:processReleaseJavaRes
+> Task :feature:vocal:compileReleaseUnitTestKotlin NO-SOURCE
+> Task :feature:vocal:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :feature:vocal:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :feature:vocal:testReleaseUnitTest NO-SOURCE
+> Task :feature:vocal:test UP-TO-DATE
+> Task :app:compileDebugJavaWithJavac
+> Task :feature:home:bundleLibRuntimeToDirDebug
+> Task :feature:studio:bundleLibRuntimeToDirDebug
+> Task :feature:pianoroll:bundleLibRuntimeToDirDebug
+> Task :feature:arrangement:bundleLibRuntimeToDirDebug
+> Task :feature:drums:bundleLibRuntimeToDirDebug
+> Task :feature:instruments:bundleLibRuntimeToDirDebug
+> Task :feature:recording:bundleLibRuntimeToDirDebug
+> Task :feature:mixer:bundleLibRuntimeToDirDebug
+> Task :feature:vocal:bundleLibRuntimeToDirDebug
+> Task :feature:effects:bundleLibRuntimeToDirDebug
+> Task :app:hiltAggregateDepsDebug
+> Task :feature:automation:bundleLibRuntimeToDirDebug
+> Task :feature:sounds:bundleLibRuntimeToDirDebug
+> Task :feature:export:bundleLibRuntimeToDirDebug
+> Task :feature:settings:bundleLibRuntimeToDirDebug
+> Task :core:designsystem:bundleLibRuntimeToDirDebug
+> Task :core:database:bundleLibRuntimeToDirDebug
+> Task :core:audio:bundleLibRuntimeToDirDebug
+> Task :core:storage:bundleLibRuntimeToDirDebug
+> Task :core:audio:mergeDebugJniLibFolders
+> Task :core:audio:mergeDebugNativeLibs NO-SOURCE
+> Task :core:audio:copyDebugJniLibsProjectOnly
+> Task :core:database:mergeDebugJniLibFolders
+> Task :core:database:mergeDebugNativeLibs NO-SOURCE
+> Task :core:database:copyDebugJniLibsProjectOnly
+> Task :core:designsystem:mergeDebugJniLibFolders
+> Task :core:designsystem:mergeDebugNativeLibs NO-SOURCE
+> Task :core:designsystem:copyDebugJniLibsProjectOnly
+> Task :core:storage:mergeDebugJniLibFolders
+> Task :core:storage:mergeDebugNativeLibs NO-SOURCE
+> Task :core:storage:copyDebugJniLibsProjectOnly
+> Task :feature:arrangement:mergeDebugJniLibFolders
+> Task :feature:automation:mergeDebugJniLibFolders
+> Task :feature:arrangement:mergeDebugNativeLibs NO-SOURCE
+> Task :feature:arrangement:copyDebugJniLibsProjectOnly
+> Task :feature:automation:mergeDebugNativeLibs NO-SOURCE
+> Task :feature:drums:mergeDebugJniLibFolders
+> Task :feature:automation:copyDebugJniLibsProjectOnly
+> Task :feature:drums:mergeDebugNativeLibs NO-SOURCE
+> Task :feature:effects:mergeDebugJniLibFolders
+> Task :feature:drums:copyDebugJniLibsProjectOnly
+> Task :feature:effects:mergeDebugNativeLibs NO-SOURCE
+> Task :feature:export:mergeDebugJniLibFolders
+> Task :feature:effects:copyDebugJniLibsProjectOnly
+> Task :feature:export:mergeDebugNativeLibs NO-SOURCE
+> Task :feature:export:copyDebugJniLibsProjectOnly
+> Task :feature:home:mergeDebugJniLibFolders
+> Task :feature:home:mergeDebugNativeLibs NO-SOURCE
+> Task :feature:instruments:mergeDebugJniLibFolders
+> Task :feature:instruments:mergeDebugNativeLibs NO-SOURCE
+> Task :feature:home:copyDebugJniLibsProjectOnly
+> Task :feature:instruments:copyDebugJniLibsProjectOnly
+> Task :feature:mixer:mergeDebugJniLibFolders
+> Task :feature:pianoroll:mergeDebugJniLibFolders
+> Task :feature:mixer:mergeDebugNativeLibs NO-SOURCE
+> Task :feature:pianoroll:mergeDebugNativeLibs NO-SOURCE
+> Task :feature:mixer:copyDebugJniLibsProjectOnly
+> Task :feature:pianoroll:copyDebugJniLibsProjectOnly
+> Task :feature:recording:mergeDebugJniLibFolders
+> Task :feature:settings:mergeDebugJniLibFolders
+> Task :feature:settings:mergeDebugNativeLibs NO-SOURCE
+> Task :feature:recording:mergeDebugNativeLibs NO-SOURCE
+> Task :feature:settings:copyDebugJniLibsProjectOnly
+> Task :feature:recording:copyDebugJniLibsProjectOnly
+> Task :feature:sounds:mergeDebugJniLibFolders
+> Task :feature:studio:mergeDebugJniLibFolders
+> Task :feature:studio:mergeDebugNativeLibs NO-SOURCE
+> Task :feature:sounds:mergeDebugNativeLibs NO-SOURCE
+> Task :feature:studio:copyDebugJniLibsProjectOnly
+> Task :feature:sounds:copyDebugJniLibsProjectOnly
+> Task :core:audio:stripDebugDebugSymbols NO-SOURCE
+> Task :core:audio:copyDebugJniLibsProjectAndLocalJars
+> Task :feature:vocal:mergeDebugJniLibFolders
+> Task :feature:vocal:mergeDebugNativeLibs NO-SOURCE
+> Task :feature:vocal:copyDebugJniLibsProjectOnly
+> Task :core:database:stripDebugDebugSymbols NO-SOURCE
+> Task :core:database:copyDebugJniLibsProjectAndLocalJars
+> Task :core:designsystem:stripDebugDebugSymbols NO-SOURCE
+> Task :core:designsystem:copyDebugJniLibsProjectAndLocalJars
+> Task :app:hiltJavaCompileDebug
+> Task :app:transformDebugClassesWithAsm
+> Task :app:bundleDebugClassesToRuntimeJar
+> Task :app:processDebugJavaRes
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:kaptGenerateStubsDebugUnitTestKotlin
+> Task :app:kaptDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestKotlin NO-SOURCE
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:hiltAggregateDepsDebugUnitTest
+> Task :app:hiltJavaCompileDebugUnitTest NO-SOURCE
+> Task :app:processDebugUnitTestJavaRes NO-SOURCE
+> Task :app:transformDebugUnitTestClassesWithAsm
+> Task :app:testDebugUnitTest NO-SOURCE
+> Task :app:kaptGenerateStubsReleaseKotlin
+> Task :app:kaptReleaseKotlin
+> Task :core:designsystem:extractDebugAnnotations
+> Task :core:database:extractDebugAnnotations
+> Task :core:audio:extractDebugAnnotations
+> Task :core:database:extractDeepLinksForAarDebug
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :core:database:mergeDebugGeneratedProguardFiles
+> Task :core:audio:extractDeepLinksForAarDebug FROM-CACHE
+> Task :core:database:mergeDebugConsumerProguardFiles
+> Task :core:audio:mergeDebugGeneratedProguardFiles
+> Task :core:database:prepareDebugArtProfile
+> Task :app:mergeDebugShaders
+> Task :core:audio:mergeDebugConsumerProguardFiles
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :core:audio:prepareDebugArtProfile
+> Task :core:database:prepareLintJarForPublish
+> Task :core:audio:prepareLintJarForPublish
+> Task :app:mergeDebugAssets
+> Task :app:compressDebugAssets
+> Task :core:audio:mergeDebugJavaResource
+> Task :core:database:mergeDebugJavaResource
+> Task :app:desugarDebugFileDependencies
+> Task :core:audio:syncDebugLibJars
+> Task :core:database:syncDebugLibJars
+> Task :core:audio:bundleDebugAar
+> Task :core:audio:assembleDebug
+> Task :core:database:bundleDebugAar
+> Task :core:database:assembleDebug
+> Task :core:storage:stripDebugDebugSymbols NO-SOURCE
+> Task :core:designsystem:extractDeepLinksForAarDebug FROM-CACHE
+> Task :core:storage:copyDebugJniLibsProjectAndLocalJars
+> Task :core:designsystem:mergeDebugGeneratedProguardFiles
+> Task :core:designsystem:mergeDebugConsumerProguardFiles
+> Task :core:designsystem:prepareDebugArtProfile
+> Task :core:storage:extractDebugAnnotations
+> Task :core:designsystem:prepareLintJarForPublish
+> Task :core:storage:extractDeepLinksForAarDebug FROM-CACHE
+> Task :core:storage:mergeDebugGeneratedProguardFiles
+> Task :core:storage:mergeDebugConsumerProguardFiles
+> Task :core:storage:prepareDebugArtProfile
+> Task :core:designsystem:mergeDebugJavaResource
+> Task :core:designsystem:syncDebugLibJars
+> Task :core:designsystem:bundleDebugAar
+> Task :core:designsystem:assembleDebug
+> Task :core:storage:prepareLintJarForPublish
+> Task :feature:arrangement:stripDebugDebugSymbols NO-SOURCE
+> Task :core:storage:mergeDebugJavaResource
+> Task :core:storage:syncDebugLibJars
+> Task :core:storage:bundleDebugAar
+> Task :core:storage:assembleDebug
+> Task :feature:arrangement:copyDebugJniLibsProjectAndLocalJars
+> Task :feature:automation:stripDebugDebugSymbols NO-SOURCE
+> Task :feature:automation:copyDebugJniLibsProjectAndLocalJars
+> Task :feature:automation:extractDebugAnnotations
+> Task :feature:automation:extractDeepLinksForAarDebug FROM-CACHE
+> Task :feature:automation:mergeDebugGeneratedProguardFiles
+> Task :feature:automation:mergeDebugConsumerProguardFiles
+> Task :feature:arrangement:extractDebugAnnotations
+> Task :feature:arrangement:extractDeepLinksForAarDebug FROM-CACHE
+> Task :feature:automation:prepareDebugArtProfile
+> Task :feature:arrangement:mergeDebugGeneratedProguardFiles
+> Task :feature:arrangement:mergeDebugConsumerProguardFiles
+> Task :feature:automation:prepareLintJarForPublish
+> Task :feature:arrangement:prepareDebugArtProfile
+> Task :feature:arrangement:prepareLintJarForPublish
+> Task :feature:automation:mergeDebugJavaResource
+> Task :feature:arrangement:mergeDebugJavaResource
+> Task :feature:automation:syncDebugLibJars
+> Task :feature:automation:bundleDebugAar
+> Task :feature:automation:assembleDebug
+> Task :feature:drums:stripDebugDebugSymbols NO-SOURCE
+> Task :feature:drums:copyDebugJniLibsProjectAndLocalJars
+> Task :app:dexBuilderDebug
+> Task :feature:arrangement:syncDebugLibJars
+> Task :feature:drums:extractDebugAnnotations
+> Task :feature:drums:extractDeepLinksForAarDebug FROM-CACHE
+> Task :feature:drums:mergeDebugGeneratedProguardFiles
+> Task :feature:drums:mergeDebugConsumerProguardFiles
+> Task :feature:drums:prepareDebugArtProfile
+> Task :feature:arrangement:bundleDebugAar
+> Task :feature:arrangement:assembleDebug
+> Task :app:compileReleaseKotlin
+> Task :feature:effects:stripDebugDebugSymbols NO-SOURCE
+> Task :feature:effects:copyDebugJniLibsProjectAndLocalJars
+> Task :feature:effects:extractDebugAnnotations
+> Task :feature:effects:extractDeepLinksForAarDebug FROM-CACHE
+> Task :feature:effects:mergeDebugGeneratedProguardFiles
+> Task :feature:effects:mergeDebugConsumerProguardFiles
+> Task :feature:effects:prepareDebugArtProfile
+> Task :feature:drums:prepareLintJarForPublish
+> Task :feature:drums:mergeDebugJavaResource
+> Task :feature:drums:syncDebugLibJars
+> Task :feature:drums:bundleDebugAar
+> Task :feature:drums:assembleDebug
+> Task :feature:export:stripDebugDebugSymbols NO-SOURCE
+> Task :feature:export:copyDebugJniLibsProjectAndLocalJars
+> Task :feature:export:extractDebugAnnotations
+> Task :feature:export:extractDeepLinksForAarDebug FROM-CACHE
+> Task :feature:export:mergeDebugGeneratedProguardFiles
+> Task :feature:export:mergeDebugConsumerProguardFiles
+> Task :feature:export:prepareDebugArtProfile
+> Task :feature:export:prepareLintJarForPublish
+> Task :feature:export:mergeDebugJavaResource
+> Task :feature:export:syncDebugLibJars
+> Task :feature:export:bundleDebugAar
+> Task :feature:export:assembleDebug
+> Task :feature:home:stripDebugDebugSymbols NO-SOURCE
+> Task :feature:effects:prepareLintJarForPublish
+> Task :feature:home:extractDebugAnnotations
+> Task :feature:home:extractDeepLinksForAarDebug FROM-CACHE
+> Task :feature:home:mergeDebugGeneratedProguardFiles
+> Task :feature:home:mergeDebugConsumerProguardFiles
+> Task :feature:home:prepareDebugArtProfile
+> Task :feature:effects:mergeDebugJavaResource
+> Task :feature:effects:syncDebugLibJars
+> Task :feature:effects:bundleDebugAar
+> Task :feature:effects:assembleDebug
+> Task :feature:home:mergeDebugJavaResource
+> Task :feature:home:syncDebugLibJars
+> Task :feature:instruments:stripDebugDebugSymbols NO-SOURCE
+> Task :feature:home:prepareLintJarForPublish
+> Task :feature:instruments:extractDebugAnnotations
+> Task :feature:instruments:extractDeepLinksForAarDebug FROM-CACHE
+> Task :feature:instruments:mergeDebugGeneratedProguardFiles
+> Task :feature:instruments:mergeDebugConsumerProguardFiles
+> Task :feature:instruments:prepareDebugArtProfile
+> Task :feature:instruments:prepareLintJarForPublish
+> Task :feature:instruments:copyDebugJniLibsProjectAndLocalJars
+> Task :feature:mixer:stripDebugDebugSymbols NO-SOURCE
+> Task :feature:home:copyDebugJniLibsProjectAndLocalJars
+> Task :feature:home:bundleDebugAar
+> Task :feature:home:assembleDebug
+> Task :feature:mixer:extractDebugAnnotations
+> Task :feature:mixer:extractDeepLinksForAarDebug FROM-CACHE
+> Task :feature:mixer:mergeDebugGeneratedProguardFiles
+> Task :feature:mixer:mergeDebugConsumerProguardFiles
+> Task :feature:mixer:prepareDebugArtProfile
+> Task :feature:instruments:mergeDebugJavaResource
+> Task :feature:instruments:syncDebugLibJars
+> Task :feature:instruments:bundleDebugAar
+> Task :feature:instruments:assembleDebug
+> Task :feature:mixer:copyDebugJniLibsProjectAndLocalJars
+> Task :feature:pianoroll:stripDebugDebugSymbols NO-SOURCE
+> Task :feature:mixer:mergeDebugJavaResource
+> Task :feature:mixer:syncDebugLibJars
+> Task :feature:pianoroll:extractDebugAnnotations
+> Task :feature:pianoroll:extractDeepLinksForAarDebug FROM-CACHE
+> Task :feature:pianoroll:mergeDebugGeneratedProguardFiles
+> Task :feature:pianoroll:mergeDebugConsumerProguardFiles
+> Task :feature:pianoroll:prepareDebugArtProfile
+> Task :feature:pianoroll:copyDebugJniLibsProjectAndLocalJars
+> Task :feature:mixer:prepareLintJarForPublish
+> Task :feature:mixer:bundleDebugAar
+> Task :feature:mixer:assembleDebug
+> Task :feature:recording:stripDebugDebugSymbols NO-SOURCE
+> Task :feature:pianoroll:prepareLintJarForPublish
+> Task :feature:recording:extractDebugAnnotations
+> Task :feature:recording:extractDeepLinksForAarDebug FROM-CACHE
+> Task :feature:recording:mergeDebugGeneratedProguardFiles
+> Task :feature:recording:mergeDebugConsumerProguardFiles
+> Task :feature:recording:prepareDebugArtProfile
+> Task :feature:pianoroll:mergeDebugJavaResource
+> Task :feature:pianoroll:syncDebugLibJars
+> Task :feature:pianoroll:bundleDebugAar
+> Task :feature:pianoroll:assembleDebug
+> Task :feature:recording:copyDebugJniLibsProjectAndLocalJars
+> Task :feature:settings:stripDebugDebugSymbols NO-SOURCE
+> Task :feature:settings:copyDebugJniLibsProjectAndLocalJars
+> Task :feature:settings:extractDebugAnnotations
+> Task :feature:settings:extractDeepLinksForAarDebug FROM-CACHE
+> Task :feature:settings:mergeDebugGeneratedProguardFiles
+> Task :feature:settings:mergeDebugConsumerProguardFiles
+> Task :feature:settings:prepareDebugArtProfile
+> Task :feature:recording:prepareLintJarForPublish
+> Task :feature:settings:mergeDebugJavaResource
+> Task :feature:settings:syncDebugLibJars
+> Task :feature:sounds:stripDebugDebugSymbols NO-SOURCE
+> Task :feature:sounds:copyDebugJniLibsProjectAndLocalJars
+> Task :feature:sounds:extractDebugAnnotations
+> Task :feature:sounds:extractDeepLinksForAarDebug FROM-CACHE
+> Task :feature:sounds:mergeDebugGeneratedProguardFiles
+> Task :feature:sounds:mergeDebugConsumerProguardFiles
+> Task :feature:sounds:prepareDebugArtProfile
+> Task :feature:settings:prepareLintJarForPublish
+> Task :feature:settings:bundleDebugAar
+> Task :feature:settings:assembleDebug
+> Task :feature:recording:mergeDebugJavaResource
+> Task :feature:recording:syncDebugLibJars
+> Task :feature:recording:bundleDebugAar
+> Task :feature:recording:assembleDebug
+> Task :feature:studio:stripDebugDebugSymbols NO-SOURCE
+> Task :feature:sounds:mergeDebugJavaResource
+> Task :feature:sounds:syncDebugLibJars
+> Task :feature:studio:extractDebugAnnotations
+> Task :feature:studio:extractDeepLinksForAarDebug FROM-CACHE
+> Task :feature:studio:mergeDebugGeneratedProguardFiles
+> Task :feature:studio:mergeDebugConsumerProguardFiles
+> Task :feature:studio:prepareDebugArtProfile
+> Task :feature:sounds:prepareLintJarForPublish
+> Task :feature:sounds:bundleDebugAar
+> Task :feature:sounds:assembleDebug
+> Task :feature:studio:prepareLintJarForPublish
+> Task :feature:vocal:stripDebugDebugSymbols NO-SOURCE
+> Task :feature:studio:copyDebugJniLibsProjectAndLocalJars
+> Task :feature:vocal:extractDebugAnnotations
+> Task :feature:vocal:extractDeepLinksForAarDebug FROM-CACHE
+> Task :feature:vocal:mergeDebugGeneratedProguardFiles
+> Task :feature:vocal:mergeDebugConsumerProguardFiles
+> Task :feature:vocal:prepareDebugArtProfile
+> Task :feature:studio:mergeDebugJavaResource
+> Task :feature:studio:syncDebugLibJars
+> Task :feature:studio:bundleDebugAar
+> Task :feature:studio:assembleDebug
+> Task :feature:vocal:copyDebugJniLibsProjectAndLocalJars
+> Task :core:audio:preDebugAndroidTestBuild UP-TO-DATE
+> Task :feature:vocal:mergeDebugJavaResource
+> Task :feature:vocal:syncDebugLibJars
+> Task :core:database:preDebugAndroidTestBuild UP-TO-DATE
+> Task :feature:vocal:prepareLintJarForPublish
+> Task :feature:vocal:bundleDebugAar
+> Task :feature:vocal:assembleDebug
+> Task :core:designsystem:preDebugAndroidTestBuild UP-TO-DATE
+> Task :core:audio:checkDebugAndroidTestAarMetadata
+> Task :core:audio:generateDebugAndroidTestResValues FROM-CACHE
+> Task :core:designsystem:checkDebugAndroidTestAarMetadata
+> Task :core:designsystem:generateDebugAndroidTestResValues FROM-CACHE
+> Task :core:audio:mapDebugAndroidTestSourceSetPaths
+> Task :core:audio:generateDebugAndroidTestResources
+> Task :core:designsystem:mapDebugAndroidTestSourceSetPaths
+> Task :core:audio:mergeDebugAndroidTestResources
+> Task :core:designsystem:generateDebugAndroidTestResources FROM-CACHE
+> Task :core:audio:processDebugAndroidTestManifest
+> Task :core:database:checkDebugAndroidTestAarMetadata
+> Task :core:audio:javaPreCompileDebugAndroidTest FROM-CACHE
+> Task :core:audio:mergeDebugAndroidTestShaders
+> Task :core:audio:compileDebugAndroidTestShaders NO-SOURCE
+> Task :core:audio:generateDebugAndroidTestAssets UP-TO-DATE
+> Task :core:audio:mergeDebugAndroidTestAssets
+> Task :core:audio:compressDebugAndroidTestAssets FROM-CACHE
+> Task :core:audio:desugarDebugAndroidTestFileDependencies FROM-CACHE
+> Task :core:designsystem:mergeDebugAndroidTestResources
+> Task :core:database:generateDebugAndroidTestResValues FROM-CACHE
+> Task :core:audio:processDebugAndroidTestResources
+> Task :core:database:mapDebugAndroidTestSourceSetPaths
+> Task :core:database:generateDebugAndroidTestResources FROM-CACHE
+> Task :core:audio:checkDebugAndroidTestDuplicateClasses
+> Task :core:designsystem:processDebugAndroidTestManifest
+> Task :core:audio:compileDebugAndroidTestKotlin NO-SOURCE
+> Task :core:audio:compileDebugAndroidTestJavaWithJavac NO-SOURCE
+> Task :core:audio:dexBuilderDebugAndroidTest
+> Task :core:database:mergeDebugAndroidTestResources
+> Task :core:designsystem:processDebugAndroidTestResources
+> Task :core:designsystem:compileDebugAndroidTestKotlin NO-SOURCE
+> Task :core:designsystem:javaPreCompileDebugAndroidTest FROM-CACHE
+> Task :core:designsystem:compileDebugAndroidTestJavaWithJavac NO-SOURCE
+> Task :core:designsystem:mergeDebugAndroidTestShaders
+> Task :core:designsystem:compileDebugAndroidTestShaders NO-SOURCE
+> Task :core:designsystem:generateDebugAndroidTestAssets UP-TO-DATE
+> Task :core:designsystem:mergeDebugAndroidTestAssets
+> Task :core:designsystem:compressDebugAndroidTestAssets FROM-CACHE
+> Task :core:database:processDebugAndroidTestManifest
+> Task :core:designsystem:desugarDebugAndroidTestFileDependencies FROM-CACHE
+> Task :core:audio:mergeDebugAndroidTestGlobalSynthetics
+> Task :core:designsystem:dexBuilderDebugAndroidTest
+> Task :core:audio:processDebugAndroidTestJavaRes NO-SOURCE
+> Task :core:database:processDebugAndroidTestResources
+> Task :core:database:kaptGenerateStubsDebugAndroidTestKotlin
+> Task :core:audio:mergeDebugAndroidTestJavaResource
+> Task :core:database:kaptDebugAndroidTestKotlin
+> Task :core:audio:mergeLibDexDebugAndroidTest
+> Task :core:audio:mergeProjectDexDebugAndroidTest
+> Task :core:audio:mergeDebugAndroidTestJniLibFolders
+> Task :core:audio:mergeDebugAndroidTestNativeLibs
+
+> Task :core:audio:stripDebugAndroidTestDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libdatastore_shared_counter.so.
+
+> Task :core:audio:validateSigningDebugAndroidTest
+> Task :core:audio:writeDebugAndroidTestSigningConfigVersions
+> Task :core:audio:mergeExtDexDebugAndroidTest
+> Task :core:database:compileDebugAndroidTestKotlin NO-SOURCE
+> Task :core:database:javaPreCompileDebugAndroidTest FROM-CACHE
+> Task :core:database:compileDebugAndroidTestJavaWithJavac NO-SOURCE
+> Task :core:database:mergeDebugAndroidTestShaders
+> Task :core:database:compileDebugAndroidTestShaders NO-SOURCE
+> Task :core:database:generateDebugAndroidTestAssets UP-TO-DATE
+> Task :core:database:mergeDebugAndroidTestAssets
+> Task :core:database:compressDebugAndroidTestAssets FROM-CACHE
+> Task :core:database:desugarDebugAndroidTestFileDependencies FROM-CACHE
+> Task :core:database:dexBuilderDebugAndroidTest
+> Task :app:mergeDebugGlobalSynthetics
+> Task :core:audio:packageDebugAndroidTest
+> Task :core:audio:createDebugAndroidTestApkListingFileRedirect
+> Task :core:audio:assembleDebugAndroidTest
+> Task :core:storage:preDebugAndroidTestBuild UP-TO-DATE
+> Task :core:storage:checkDebugAndroidTestAarMetadata
+> Task :core:storage:generateDebugAndroidTestResValues FROM-CACHE
+> Task :core:storage:mapDebugAndroidTestSourceSetPaths
+> Task :core:storage:generateDebugAndroidTestResources FROM-CACHE
+> Task :core:database:mergeDebugAndroidTestGlobalSynthetics FROM-CACHE
+> Task :core:database:processDebugAndroidTestJavaRes NO-SOURCE
+> Task :core:database:mergeDebugAndroidTestJavaResource
+> Task :core:storage:mergeDebugAndroidTestResources
+> Task :core:storage:processDebugAndroidTestManifest
+> Task :core:database:checkDebugAndroidTestDuplicateClasses
+> Task :core:storage:processDebugAndroidTestResources
+> Task :core:database:mergeLibDexDebugAndroidTest
+> Task :core:database:mergeProjectDexDebugAndroidTest
+> Task :core:database:mergeDebugAndroidTestJniLibFolders
+> Task :core:database:mergeDebugAndroidTestNativeLibs NO-SOURCE
+> Task :core:database:stripDebugAndroidTestDebugSymbols NO-SOURCE
+> Task :core:database:validateSigningDebugAndroidTest
+> Task :core:database:writeDebugAndroidTestSigningConfigVersions
+> Task :core:storage:compileDebugAndroidTestKotlin NO-SOURCE
+> Task :core:storage:javaPreCompileDebugAndroidTest FROM-CACHE
+> Task :core:storage:compileDebugAndroidTestJavaWithJavac NO-SOURCE
+> Task :core:storage:mergeDebugAndroidTestShaders
+> Task :core:storage:compileDebugAndroidTestShaders NO-SOURCE
+> Task :core:storage:generateDebugAndroidTestAssets UP-TO-DATE
+> Task :core:storage:mergeDebugAndroidTestAssets
+> Task :core:storage:compressDebugAndroidTestAssets FROM-CACHE
+> Task :core:storage:desugarDebugAndroidTestFileDependencies FROM-CACHE
+> Task :core:storage:dexBuilderDebugAndroidTest
+> Task :core:storage:mergeDebugAndroidTestGlobalSynthetics FROM-CACHE
+> Task :core:storage:processDebugAndroidTestJavaRes NO-SOURCE
+> Task :core:storage:mergeDebugAndroidTestJavaResource
+> Task :core:storage:checkDebugAndroidTestDuplicateClasses
+> Task :core:storage:mergeExtDexDebugAndroidTest FROM-CACHE
+> Task :core:storage:mergeLibDexDebugAndroidTest
+> Task :core:storage:mergeProjectDexDebugAndroidTest
+> Task :core:storage:mergeDebugAndroidTestJniLibFolders
+> Task :core:storage:mergeDebugAndroidTestNativeLibs
+
+> Task :core:storage:stripDebugAndroidTestDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libdatastore_shared_counter.so.
+
+> Task :core:storage:validateSigningDebugAndroidTest
+> Task :core:storage:writeDebugAndroidTestSigningConfigVersions
+> Task :core:storage:packageDebugAndroidTest
+> Task :core:storage:createDebugAndroidTestApkListingFileRedirect
+> Task :core:storage:assembleDebugAndroidTest
+> Task :feature:arrangement:preDebugAndroidTestBuild UP-TO-DATE
+> Task :feature:arrangement:checkDebugAndroidTestAarMetadata
+> Task :core:database:mergeExtDexDebugAndroidTest
+> Task :feature:arrangement:generateDebugAndroidTestResValues FROM-CACHE
+> Task :feature:arrangement:mapDebugAndroidTestSourceSetPaths
+> Task :feature:arrangement:generateDebugAndroidTestResources FROM-CACHE
+> Task :core:database:packageDebugAndroidTest
+> Task :core:database:createDebugAndroidTestApkListingFileRedirect
+> Task :core:database:assembleDebugAndroidTest
+> Task :feature:automation:preDebugAndroidTestBuild UP-TO-DATE
+> Task :feature:automation:checkDebugAndroidTestAarMetadata
+> Task :feature:automation:generateDebugAndroidTestResValues FROM-CACHE
+> Task :feature:automation:mapDebugAndroidTestSourceSetPaths
+> Task :feature:automation:generateDebugAndroidTestResources FROM-CACHE
+> Task :feature:arrangement:mergeDebugAndroidTestResources
+> Task :feature:automation:mergeDebugAndroidTestResources
+> Task :feature:arrangement:processDebugAndroidTestManifest
+> Task :feature:automation:processDebugAndroidTestManifest
+> Task :feature:arrangement:javaPreCompileDebugAndroidTest FROM-CACHE
+> Task :feature:arrangement:mergeDebugAndroidTestShaders
+> Task :feature:arrangement:compileDebugAndroidTestShaders NO-SOURCE
+> Task :feature:arrangement:generateDebugAndroidTestAssets UP-TO-DATE
+> Task :feature:arrangement:mergeDebugAndroidTestAssets
+> Task :feature:arrangement:compressDebugAndroidTestAssets FROM-CACHE
+> Task :feature:arrangement:desugarDebugAndroidTestFileDependencies FROM-CACHE
+> Task :feature:arrangement:processDebugAndroidTestResources
+> Task :feature:arrangement:compileDebugAndroidTestKotlin NO-SOURCE
+> Task :feature:arrangement:compileDebugAndroidTestJavaWithJavac NO-SOURCE
+> Task :feature:arrangement:checkDebugAndroidTestDuplicateClasses
+> Task :feature:arrangement:dexBuilderDebugAndroidTest
+> Task :feature:automation:processDebugAndroidTestResources
+> Task :feature:automation:compileDebugAndroidTestKotlin NO-SOURCE
+> Task :feature:automation:javaPreCompileDebugAndroidTest FROM-CACHE
+> Task :feature:automation:compileDebugAndroidTestJavaWithJavac NO-SOURCE
+> Task :feature:automation:mergeDebugAndroidTestShaders
+> Task :feature:automation:compileDebugAndroidTestShaders NO-SOURCE
+> Task :feature:automation:generateDebugAndroidTestAssets UP-TO-DATE
+> Task :feature:automation:mergeDebugAndroidTestAssets
+> Task :feature:automation:compressDebugAndroidTestAssets FROM-CACHE
+> Task :feature:automation:desugarDebugAndroidTestFileDependencies FROM-CACHE
+> Task :feature:automation:dexBuilderDebugAndroidTest
+> Task :feature:automation:mergeDebugAndroidTestGlobalSynthetics FROM-CACHE
+> Task :core:designsystem:mergeDebugAndroidTestGlobalSynthetics FROM-CACHE
+> Task :core:designsystem:processDebugAndroidTestJavaRes NO-SOURCE
+> Task :feature:arrangement:mergeDebugAndroidTestGlobalSynthetics FROM-CACHE
+> Task :app:mergeDebugGlobalSynthetics FROM-CACHE
+> Task :feature:automation:processDebugAndroidTestJavaRes NO-SOURCE
+> Task :feature:arrangement:processDebugAndroidTestJavaRes NO-SOURCE
+> Task :app:compileReleaseJavaWithJavac
+> Task :app:hiltAggregateDepsRelease FROM-CACHE
+> Task :core:designsystem:mergeDebugAndroidTestJavaResource
+> Task :feature:automation:mergeDebugAndroidTestJavaResource
+> Task :core:designsystem:checkDebugAndroidTestDuplicateClasses
+> Task :feature:arrangement:mergeDebugAndroidTestJavaResource
+> Task :feature:automation:checkDebugAndroidTestDuplicateClasses
+> Task :app:hiltJavaCompileRelease
+> Task :core:designsystem:mergeLibDexDebugAndroidTest
+> Task :app:processReleaseJavaRes
+> Task :app:bundleReleaseClassesToCompileJar
+> Task :app:transformReleaseClassesWithAsm
+> Task :core:designsystem:mergeProjectDexDebugAndroidTest
+> Task :core:designsystem:mergeDebugAndroidTestJniLibFolders
+> Task :core:designsystem:mergeDebugAndroidTestNativeLibs
+> Task :app:kaptGenerateStubsReleaseUnitTestKotlin
+
+> Task :core:designsystem:stripDebugAndroidTestDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so.
+
+> Task :app:bundleReleaseClassesToRuntimeJar
+> Task :core:designsystem:validateSigningDebugAndroidTest
+> Task :core:designsystem:writeDebugAndroidTestSigningConfigVersions
+> Task :app:kaptReleaseUnitTestKotlin
+> Task :app:compileReleaseUnitTestKotlin NO-SOURCE
+> Task :app:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :app:hiltAggregateDepsReleaseUnitTest FROM-CACHE
+> Task :feature:arrangement:mergeLibDexDebugAndroidTest
+> Task :app:hiltJavaCompileReleaseUnitTest NO-SOURCE
+> Task :app:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :feature:arrangement:mergeProjectDexDebugAndroidTest
+> Task :app:transformReleaseUnitTestClassesWithAsm
+> Task :feature:arrangement:mergeDebugAndroidTestJniLibFolders
+> Task :app:testReleaseUnitTest NO-SOURCE
+> Task :app:test UP-TO-DATE
+> Task :feature:arrangement:mergeDebugAndroidTestNativeLibs
+
+> Task :feature:arrangement:stripDebugAndroidTestDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so, libdatastore_shared_counter.so.
+
+> Task :feature:arrangement:validateSigningDebugAndroidTest
+> Task :app:checkDebugDuplicateClasses
+> Task :app:mergeDebugStartupProfile
+> Task :app:mergeDebugJavaResource
+> Task :app:mergeLibDexDebug
+> Task :app:mergeProjectDexDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :app:mergeDebugNativeLibs
+
+> Task :app:stripDebugDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so, libdatastore_shared_counter.so.
+
+> Task :app:validateSigningDebug
+> Task :app:writeDebugAppMetadata
+> Task :core:designsystem:mergeExtDexDebugAndroidTest
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :feature:arrangement:mergeExtDexDebugAndroidTest
+> Task :feature:arrangement:writeDebugAndroidTestSigningConfigVersions
+> Task :core:designsystem:packageDebugAndroidTest
+> Task :feature:arrangement:packageDebugAndroidTest FAILED
+> Task :core:designsystem:createDebugAndroidTestApkListingFileRedirect
+> Task :core:designsystem:assembleDebugAndroidTest
+> Task :feature:automation:mergeExtDexDebugAndroidTest FROM-CACHE
+> Task :app:checkDebugAndroidTestAarMetadata
+> Task :app:mergeExtDexDebug
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':feature:arrangement:packageDebugAndroidTest'.
+> A failure occurred while executing com.android.build.gradle.tasks.PackageAndroidArtifact$IncrementalSplitterRunnable
+
+* Try:
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':feature:arrangement:packageDebugAndroidTest'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:130)
+	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:282)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:128)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:80)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:463)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:380)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+Caused by: org.gradle.workers.internal.DefaultWorkerExecutor$WorkExecutionException: A failure occurred while executing com.android.build.gradle.tasks.PackageAndroidArtifact$IncrementalSplitterRunnable
+	at org.gradle.workers.internal.DefaultWorkerExecutor$WorkItemExecution.waitForCompletion(DefaultWorkerExecutor.java:287)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.lambda$waitForItemsAndGatherFailures$2(DefaultAsyncWorkTracker.java:130)
+	at org.gradle.internal.Factories$1.create(Factories.java:31)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLocks(DefaultWorkerLeaseService.java:336)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLocks(DefaultWorkerLeaseService.java:319)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLock(DefaultWorkerLeaseService.java:324)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForItemsAndGatherFailures(DefaultAsyncWorkTracker.java:126)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.lambda$waitForItemsAndGatherFailures$0(DefaultAsyncWorkTracker.java:100)
+	at org.gradle.internal.Factories$1.create(Factories.java:31)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLocks(DefaultWorkerLeaseService.java:336)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsIsolatedTask(DefaultWorkerLeaseService.java:212)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsIsolatedTask(DefaultWorkerLeaseService.java:201)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForItemsAndGatherFailures(DefaultAsyncWorkTracker.java:100)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForAll(DefaultAsyncWorkTracker.java:78)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForCompletion(DefaultAsyncWorkTracker.java:66)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:252)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:47)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:68)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeAction(TaskExecution.java:229)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeActions(TaskExecution.java:212)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeWithPreviousOutputFiles(TaskExecution.java:195)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.execute(TaskExecution.java:162)
+	at org.gradle.internal.execution.steps.ExecuteStep.executeInternal(ExecuteStep.java:105)
+	at org.gradle.internal.execution.steps.ExecuteStep.access$000(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:59)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:56)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:56)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:41)
+	at org.gradle.internal.execution.steps.TimeoutStep.executeWithoutTimeout(TimeoutStep.java:74)
+	at org.gradle.internal.execution.steps.TimeoutStep.execute(TimeoutStep.java:55)
+	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:50)
+	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:28)
+	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:67)
+	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:37)
+	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:61)
+	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:26)
+	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:67)
+	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:45)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:40)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:29)
+	at org.gradle.internal.execution.steps.BuildCacheStep.executeWithoutCache(BuildCacheStep.java:189)
+	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$execute$1(BuildCacheStep.java:75)
+	at org.gradle.internal.Either$Right.fold(Either.java:175)
+	at org.gradle.internal.execution.caching.CachingState.fold(CachingState.java:62)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:73)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:48)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:46)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:35)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.executeBecause(SkipUpToDateStep.java:76)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.lambda$execute$2(SkipUpToDateStep.java:54)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:54)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:36)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:37)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:27)
+	at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:49)
+	at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:27)
+	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:71)
+	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:39)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:65)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:36)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:106)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:55)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:64)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:43)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.executeWithNonEmptySources(AbstractSkipEmptyWorkStep.java:125)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:56)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:36)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:23)
+	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:75)
+	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:41)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.lambda$execute$0(AssignMutableWorkspaceStep.java:35)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$4.withWorkspace(TaskExecution.java:289)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:31)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:22)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:40)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:23)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$2(ExecuteWorkBuildOperationFiringStep.java:67)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:67)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:39)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:46)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:34)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:48)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:35)
+	at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:127)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:80)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:463)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:380)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+Caused by: java.lang.OutOfMemoryError
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at com.android.builder.internal.packaging.ApkFlinger.close(ApkFlinger.kt:246)
+	at com.google.common.io.Closer.close(Closer.java:218)
+	at com.android.builder.internal.packaging.IncrementalPackager.close(IncrementalPackager.java:538)
+	at kotlin.io.CloseableKt.closeFinally(Closeable.kt:56)
+	at com.android.build.gradle.tasks.PackageAndroidArtifact$Companion.doTask(PackageAndroidArtifact.kt:1119)
+	at com.android.build.gradle.tasks.PackageAndroidArtifact$Companion.access$doTask(PackageAndroidArtifact.kt:923)
+	at com.android.build.gradle.tasks.PackageAndroidArtifact$IncrementalSplitterRunnable.doExecute(PackageAndroidArtifact.kt:523)
+	at com.android.build.gradle.internal.workeractions.WorkActionAdapter.execute(WorkActionAdapter.kt:38)
+	at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
+	at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
+	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
+	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
+	at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$0(DefaultWorkerExecutor.java:174)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:187)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:120)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:162)
+	at org.gradle.internal.Factories$1.create(Factories.java:31)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:264)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:128)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:133)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:157)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:126)
+	... 2 more
+Caused by: java.lang.OutOfMemoryError: Java heap space
+	at com.android.zipflinger.NoCopyByteArrayOutputStream.<init>(NoCopyByteArrayOutputStream.java:27)
+	at com.android.zipflinger.Compressor.deflate(Compressor.java:35)
+	at com.android.zipflinger.BytesSource.build(BytesSource.java:89)
+	at com.android.zipflinger.BytesSource.<init>(BytesSource.java:50)
+	at com.android.zipflinger.Sources.from(Sources.java:50)
+	at com.android.zipflinger.Sources.from(Sources.java:33)
+	at com.android.builder.internal.packaging.ApkFlinger$writeFile$1.call(ApkFlinger.kt:208)
+	at com.android.builder.internal.packaging.ApkFlinger$writeFile$1.call(ApkFlinger.kt:205)
+
+
+BUILD FAILED in 3m 38s
+1119 actionable tasks: 779 executed, 340 from cache
