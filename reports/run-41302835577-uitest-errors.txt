@@ -1,0 +1,9 @@
+1294:com.sorastudio.SoraAppTest > canNavigateToStudioAndSeeTabs[emulator-5554 - 11] [31mFAILED [0m
+1295:	java.lang.AssertionError: Assert failed: The component is not displayed!
+1298:com.sorastudio.SoraAppTest > newProjectDialogOpens[emulator-5554 - 11] [31mFAILED [0m
+1299:	java.lang.AssertionError: Failed to perform checkIsDisplayed check: Expected at most 1 node but found 2 nodes that satisfy (Text + EditableText contains 'Beat Starter' (ignoreCase: false))
+1302:com.sorastudio.SoraAppTest > canNavigateToSoundsAndSettings[emulator-5554 - 11] [31mFAILED [0m
+1303:	java.lang.AssertionError: Failed to inject touch input.
+1309:> Task :app:connectedDebugAndroidTest FAILED
+1356:Caused by: org.gradle.api.GradleException: There were failing tests. See the report at: file:///home/runner/work/Sora-Studio/Sora-Studio/app/build/reports/androidTests/connected/debug/index.html
+1486:BUILD FAILED in 5m 8s
