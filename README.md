@@ -65,7 +65,7 @@ feature screens are state-driven composables fed by a single `ProjectSession`
 
 **Key versions** (stable, mutually compatible): Kotlin 1.9.24 · AGP 8.5.2 · Gradle 8.7 ·
 Compose BOM 2024.09.00 · Hilt 2.51.1 · Room 2.6.1 · DataStore 1.1.1 · Coroutines 1.8.1 ·
-kotlinx.serialization 1.7.1 · compile/target SDK 34 · min SDK 26.
+kotlinx.serialization 1.6.3 · compile/target SDK 34 · min SDK 26.
 
 ### Audio rendering model
 
