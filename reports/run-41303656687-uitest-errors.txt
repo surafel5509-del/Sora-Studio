@@ -1,0 +1,4 @@
+951:> Task :app:compileDebugAndroidTestKotlin FAILED
+1005:Caused by: org.gradle.workers.internal.DefaultWorkerExecutor$WorkExecutionException: A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+1137:Caused by: org.jetbrains.kotlin.gradle.tasks.CompilationErrorException: Compilation error. See log for more details
+1171:BUILD FAILED in 3m 50s
