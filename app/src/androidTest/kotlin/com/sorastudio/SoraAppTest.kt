@@ -50,9 +50,11 @@ class SoraAppTest {
     @Test
     fun canNavigateToSoundsAndSettings() {
         clickNav("Sounds")
-        composeRule.onNodeWithText("Drum Kits").assertIsDisplayed()
+        composeRule.onNodeWithText("Drum Kits").performScrollTo().assertIsDisplayed()
         clickNav("Settings")
-        composeRule.onNodeWithText("Appearance").assertIsDisplayed()
+        // Settings is a long scrolling list; scroll the first section into view
+        // for short/landscape viewports before asserting visibility.
+        composeRule.onNodeWithText("Appearance").performScrollTo().assertIsDisplayed()
     }
 
     @Test
