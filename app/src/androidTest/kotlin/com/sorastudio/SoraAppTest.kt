@@ -54,7 +54,8 @@ class SoraAppTest {
         clickNav("Settings")
         // Settings is a long scrolling list; scroll the first section into view
         // for short/landscape viewports before asserting visibility.
-        composeRule.onNodeWithText("Appearance").performScrollTo().assertIsDisplayed()
+        // (SectionTitle renders uppercase, hence ignoreCase.)
+        composeRule.onNodeWithText("Appearance", ignoreCase = true).performScrollTo().assertIsDisplayed()
     }
 
     @Test
