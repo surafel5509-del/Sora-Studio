@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.sorastudio.SoraAppTest" tests="4" failures="2" errors="0" skipped="0" time="5.715" timestamp="2026-11-01T12:07:37" hostname="localhost">
+  <properties>
+    <property name="device" value="emulator-5554 - 11" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="canNavigateToStudioAndSeeTabs" classname="com.sorastudio.SoraAppTest" time="2.825" />
+  <testcase name="newProjectDialogOpens" classname="com.sorastudio.SoraAppTest" time="1.025">
+    <failure>java.lang.AssertionError: Failed to perform checkIsDisplayed check: Expected at most 1 node but found 2 nodes that satisfy (Text + EditableText contains 'Song Starter' (ignoreCase: false))
+at androidx.compose.ui.test.AndroidAssertions_androidKt.checkIsDisplayed(AndroidAssertions.android.kt:35)
+at androidx.compose.ui.test.AssertionsKt.isDisplayed(Assertions.kt:359)
+at androidx.compose.ui.test.AssertionsKt.assertIsDisplayed(Assertions.kt:33)
+at com.sorastudio.SoraAppTest.newProjectDialogOpens(SoraAppTest.kt:58)
+</failure>
+  </testcase>
+  <testcase name="homeShowsBrandAndQuickActions" classname="com.sorastudio.SoraAppTest" time="0.527" />
+  <testcase name="canNavigateToSoundsAndSettings" classname="com.sorastudio.SoraAppTest" time="0.486">
+    <failure>java.lang.AssertionError: Failed to inject touch input.
+Reason: Expected exactly '1' node but found '2' nodes that satisfy: ((Text + EditableText contains 'Sounds' (ignoreCase: false)) &amp;&amp; (OnClick is defined))
+Nodes found:
+1) Node #888 at (l=215.0, t=201.0, r=304.0, b=274.0)px
+Focused = 'false'
+ContentDescription = '[Sounds]'
+Text = '[Sounds]'
+Actions = [OnClick, RequestFocus, SetTextSubstitution, ShowTextSubstitution, ClearTextSubstitution, GetTextLayoutResult]
+MergeDescendants = 'true'
+Has 12 siblings
+2) Node #825 at (l=163.0, t=560.0, r=210.0, b=640.0)px
+Role = 'Tab'
+Focused = 'false'
+Selected = 'false'
+Text = '[Sounds]'
+Actions = [OnClick, RequestFocus, SetTextSubstitution, ShowTextSubstitution, ClearTextSubstitution, GetTextLayoutResult]
+MergeDescendants = 'true'
+Has 5 siblings
+
+at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+at androidx.compose.ui.test.ActionsKt.performTouchInput(Actions.kt:393)
+at androidx.compose.ui.test.Actions_androidKt.performClickImpl(Actions.android.kt:20)
+at androidx.compose.ui.test.ActionsKt.performClick(Actions.kt:53)
+at com.sorastudio.SoraAppTest.clickNav(SoraAppTest.kt:26)
+at com.sorastudio.SoraAppTest.canNavigateToSoundsAndSettings(SoraAppTest.kt:47)
+</failure>
+  </testcase>
+</testsuite>
