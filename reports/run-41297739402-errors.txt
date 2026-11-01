@@ -1,0 +1,7 @@
+869:e: file:///home/runner/work/Sora-Studio/Sora-Studio/core/dsp/src/main/kotlin/com/sorastudio/core/dsp/MixerCore.kt:49:17 Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
+891:e: file:///home/runner/work/Sora-Studio/Sora-Studio/core/dsp/src/main/kotlin/com/sorastudio/core/dsp/Synth.kt:313:58 None of the following functions can be called with the arguments supplied: 
+899:> Task :core:dsp:compileKotlin FAILED
+906:* What went wrong:
+907:Execution failed for task ':core:dsp:compileKotlin'.
+917:org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':core:dsp:compileKotlin'.
+1176:BUILD FAILED in 3m 21s
