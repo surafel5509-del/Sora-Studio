@@ -1,0 +1,1210 @@
+..20%.............30%.............40%............50%.............60%.............70%.............80%.............90%............100%
+
+Welcome to Gradle 8.7!
+
+Here are the highlights of this release:
+ - Compiling and testing with Java 22
+ - Cacheable Groovy script compilation
+ - New methods in lazy collection properties
+
+For more details see https://docs.gradle.org/8.7/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :core:midi:checkKotlinGradlePluginConfigurationErrors
+> Task :core:project:checkKotlinGradlePluginConfigurationErrors
+> Task :core:dsp:checkKotlinGradlePluginConfigurationErrors
+> Task :core:common:checkKotlinGradlePluginConfigurationErrors
+> Task :core:project:processResources NO-SOURCE
+> Task :core:dsp:processResources NO-SOURCE
+> Task :app:preBuild UP-TO-DATE
+> Task :core:audio:preBuild UP-TO-DATE
+> Task :core:midi:processResources NO-SOURCE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :core:audio:preDebugBuild UP-TO-DATE
+> Task :app:checkKotlinGradlePluginConfigurationErrors
+> Task :core:database:preBuild UP-TO-DATE
+> Task :core:database:preDebugBuild UP-TO-DATE
+> Task :core:designsystem:preBuild UP-TO-DATE
+> Task :core:designsystem:preDebugBuild UP-TO-DATE
+> Task :core:designsystem:writeDebugAarMetadata
+> Task :core:storage:preBuild UP-TO-DATE
+> Task :core:database:writeDebugAarMetadata
+> Task :core:audio:writeDebugAarMetadata
+> Task :feature:arrangement:preBuild UP-TO-DATE
+> Task :feature:automation:preBuild UP-TO-DATE
+> Task :feature:arrangement:preDebugBuild UP-TO-DATE
+> Task :core:storage:preDebugBuild UP-TO-DATE
+> Task :feature:automation:preDebugBuild UP-TO-DATE
+> Task :feature:automation:writeDebugAarMetadata
+> Task :feature:drums:preBuild UP-TO-DATE
+> Task :feature:drums:preDebugBuild UP-TO-DATE
+> Task :feature:arrangement:writeDebugAarMetadata
+> Task :feature:effects:preBuild UP-TO-DATE
+> Task :feature:effects:preDebugBuild UP-TO-DATE
+> Task :core:storage:writeDebugAarMetadata
+> Task :feature:export:preBuild UP-TO-DATE
+> Task :feature:export:preDebugBuild UP-TO-DATE
+> Task :feature:drums:writeDebugAarMetadata
+> Task :feature:export:writeDebugAarMetadata
+> Task :feature:instruments:preBuild UP-TO-DATE
+> Task :feature:instruments:preDebugBuild UP-TO-DATE
+> Task :feature:home:preBuild UP-TO-DATE
+> Task :feature:effects:writeDebugAarMetadata
+> Task :feature:mixer:preBuild UP-TO-DATE
+> Task :feature:mixer:preDebugBuild UP-TO-DATE
+> Task :feature:home:preDebugBuild UP-TO-DATE
+> Task :feature:instruments:writeDebugAarMetadata
+> Task :feature:pianoroll:preBuild UP-TO-DATE
+> Task :feature:pianoroll:preDebugBuild UP-TO-DATE
+> Task :feature:mixer:writeDebugAarMetadata
+> Task :feature:home:writeDebugAarMetadata
+> Task :feature:settings:preBuild UP-TO-DATE
+> Task :feature:pianoroll:writeDebugAarMetadata
+> Task :feature:settings:preDebugBuild UP-TO-DATE
+> Task :feature:recording:preBuild UP-TO-DATE
+> Task :feature:sounds:preBuild UP-TO-DATE
+> Task :feature:recording:preDebugBuild UP-TO-DATE
+> Task :feature:sounds:preDebugBuild UP-TO-DATE
+> Task :feature:settings:writeDebugAarMetadata
+> Task :feature:studio:preBuild UP-TO-DATE
+> Task :feature:studio:preDebugBuild UP-TO-DATE
+> Task :feature:recording:writeDebugAarMetadata
+> Task :feature:vocal:preBuild UP-TO-DATE
+> Task :feature:vocal:preDebugBuild UP-TO-DATE
+> Task :feature:sounds:writeDebugAarMetadata
+> Task :feature:studio:writeDebugAarMetadata
+> Task :feature:vocal:writeDebugAarMetadata
+> Task :app:generateDebugResValues
+> Task :core:audio:generateDebugResValues
+> Task :core:database:generateDebugResValues FROM-CACHE
+> Task :core:audio:generateDebugResources
+> Task :core:database:generateDebugResources FROM-CACHE
+> Task :core:database:packageDebugResources
+> Task :core:audio:packageDebugResources
+> Task :core:designsystem:generateDebugResValues FROM-CACHE
+> Task :core:storage:generateDebugResValues FROM-CACHE
+> Task :core:designsystem:generateDebugResources FROM-CACHE
+> Task :core:storage:generateDebugResources FROM-CACHE
+> Task :core:designsystem:packageDebugResources
+> Task :feature:arrangement:generateDebugResValues FROM-CACHE
+> Task :feature:arrangement:generateDebugResources FROM-CACHE
+> Task :core:storage:packageDebugResources
+> Task :feature:automation:generateDebugResValues FROM-CACHE
+> Task :feature:automation:generateDebugResources FROM-CACHE
+> Task :feature:arrangement:packageDebugResources
+> Task :feature:drums:generateDebugResValues FROM-CACHE
+> Task :feature:drums:generateDebugResources FROM-CACHE
+> Task :feature:automation:packageDebugResources
+> Task :feature:drums:packageDebugResources
+> Task :feature:export:generateDebugResValues FROM-CACHE
+> Task :feature:export:generateDebugResources FROM-CACHE
+> Task :feature:effects:generateDebugResValues FROM-CACHE
+> Task :feature:effects:generateDebugResources FROM-CACHE
+> Task :feature:export:packageDebugResources
+> Task :feature:home:generateDebugResValues FROM-CACHE
+> Task :feature:effects:packageDebugResources
+> Task :feature:instruments:generateDebugResValues FROM-CACHE
+> Task :feature:home:generateDebugResources FROM-CACHE
+> Task :feature:instruments:generateDebugResources FROM-CACHE
+> Task :feature:home:packageDebugResources
+> Task :feature:instruments:packageDebugResources
+> Task :feature:mixer:generateDebugResValues FROM-CACHE
+> Task :feature:pianoroll:generateDebugResValues FROM-CACHE
+> Task :feature:mixer:generateDebugResources FROM-CACHE
+> Task :feature:pianoroll:generateDebugResources FROM-CACHE
+> Task :feature:pianoroll:packageDebugResources
+> Task :feature:mixer:packageDebugResources
+> Task :feature:recording:generateDebugResValues FROM-CACHE
+> Task :feature:settings:generateDebugResValues FROM-CACHE
+> Task :feature:recording:generateDebugResources FROM-CACHE
+> Task :feature:settings:generateDebugResources FROM-CACHE
+> Task :feature:recording:packageDebugResources
+> Task :feature:settings:packageDebugResources
+> Task :feature:sounds:generateDebugResValues FROM-CACHE
+> Task :feature:studio:generateDebugResValues FROM-CACHE
+> Task :feature:sounds:generateDebugResources FROM-CACHE
+> Task :feature:studio:generateDebugResources FROM-CACHE
+> Task :feature:studio:packageDebugResources
+> Task :feature:sounds:packageDebugResources
+> Task :feature:vocal:generateDebugResValues FROM-CACHE
+> Task :core:audio:extractDeepLinksDebug
+> Task :feature:vocal:generateDebugResources FROM-CACHE
+> Task :feature:vocal:packageDebugResources
+> Task :core:database:extractDeepLinksDebug FROM-CACHE
+> Task :core:audio:processDebugManifest
+> Task :core:designsystem:extractDeepLinksDebug FROM-CACHE
+> Task :core:database:processDebugManifest
+> Task :core:storage:extractDeepLinksDebug FROM-CACHE
+> Task :core:designsystem:processDebugManifest
+> Task :feature:arrangement:extractDeepLinksDebug FROM-CACHE
+> Task :core:storage:processDebugManifest
+> Task :feature:automation:extractDeepLinksDebug FROM-CACHE
+> Task :feature:arrangement:processDebugManifest
+> Task :feature:drums:extractDeepLinksDebug FROM-CACHE
+> Task :feature:automation:processDebugManifest
+> Task :feature:effects:extractDeepLinksDebug FROM-CACHE
+> Task :feature:drums:processDebugManifest
+> Task :feature:export:extractDeepLinksDebug FROM-CACHE
+> Task :feature:effects:processDebugManifest
+> Task :feature:home:extractDeepLinksDebug FROM-CACHE
+> Task :feature:home:processDebugManifest
+> Task :feature:instruments:extractDeepLinksDebug FROM-CACHE
+> Task :feature:export:processDebugManifest
+> Task :feature:mixer:extractDeepLinksDebug FROM-CACHE
+> Task :feature:instruments:processDebugManifest
+> Task :feature:pianoroll:extractDeepLinksDebug FROM-CACHE
+> Task :feature:mixer:processDebugManifest
+> Task :feature:pianoroll:processDebugManifest
+> Task :feature:recording:extractDeepLinksDebug FROM-CACHE
+> Task :feature:settings:extractDeepLinksDebug FROM-CACHE
+> Task :feature:recording:processDebugManifest
+> Task :feature:sounds:extractDeepLinksDebug FROM-CACHE
+> Task :feature:settings:processDebugManifest
+> Task :feature:studio:extractDeepLinksDebug FROM-CACHE
+> Task :feature:sounds:processDebugManifest
+> Task :feature:vocal:extractDeepLinksDebug FROM-CACHE
+> Task :feature:studio:processDebugManifest
+> Task :feature:vocal:processDebugManifest
+> Task :core:database:compileDebugLibraryResources
+> Task :core:audio:compileDebugLibraryResources
+> Task :core:database:parseDebugLocalResources
+> Task :core:audio:parseDebugLocalResources
+> Task :core:database:generateDebugRFile
+> Task :core:audio:generateDebugRFile
+> Task :core:designsystem:compileDebugLibraryResources FROM-CACHE
+> Task :core:storage:compileDebugLibraryResources FROM-CACHE
+> Task :core:storage:parseDebugLocalResources FROM-CACHE
+> Task :core:designsystem:parseDebugLocalResources FROM-CACHE
+> Task :core:designsystem:generateDebugRFile
+> Task :core:storage:generateDebugRFile
+> Task :feature:arrangement:compileDebugLibraryResources FROM-CACHE
+> Task :feature:automation:compileDebugLibraryResources FROM-CACHE
+> Task :feature:arrangement:parseDebugLocalResources FROM-CACHE
+> Task :feature:automation:parseDebugLocalResources FROM-CACHE
+> Task :feature:arrangement:generateDebugRFile
+> Task :feature:drums:compileDebugLibraryResources FROM-CACHE
+> Task :feature:automation:generateDebugRFile
+> Task :feature:drums:parseDebugLocalResources FROM-CACHE
+> Task :feature:effects:compileDebugLibraryResources FROM-CACHE
+> Task :feature:effects:parseDebugLocalResources FROM-CACHE
+> Task :feature:drums:generateDebugRFile
+> Task :feature:export:compileDebugLibraryResources FROM-CACHE
+> Task :feature:export:parseDebugLocalResources FROM-CACHE
+> Task :feature:effects:generateDebugRFile
+> Task :feature:home:compileDebugLibraryResources FROM-CACHE
+> Task :feature:export:generateDebugRFile
+> Task :feature:instruments:compileDebugLibraryResources FROM-CACHE
+> Task :feature:home:parseDebugLocalResources FROM-CACHE
+> Task :feature:instruments:parseDebugLocalResources FROM-CACHE
+> Task :feature:home:generateDebugRFile
+> Task :feature:mixer:compileDebugLibraryResources FROM-CACHE
+> Task :feature:mixer:parseDebugLocalResources FROM-CACHE
+> Task :feature:instruments:generateDebugRFile
+> Task :feature:pianoroll:compileDebugLibraryResources FROM-CACHE
+> Task :feature:pianoroll:parseDebugLocalResources FROM-CACHE
+> Task :feature:mixer:generateDebugRFile
+> Task :feature:recording:compileDebugLibraryResources FROM-CACHE
+> Task :feature:recording:parseDebugLocalResources FROM-CACHE
+> Task :feature:recording:generateDebugRFile
+> Task :core:common:processResources NO-SOURCE
+> Task :feature:settings:compileDebugLibraryResources FROM-CACHE
+> Task :feature:pianoroll:generateDebugRFile
+> Task :feature:sounds:compileDebugLibraryResources FROM-CACHE
+> Task :feature:sounds:parseDebugLocalResources FROM-CACHE
+> Task :feature:settings:parseDebugLocalResources FROM-CACHE
+> Task :feature:sounds:generateDebugRFile
+> Task :feature:settings:generateDebugRFile
+> Task :feature:studio:compileDebugLibraryResources FROM-CACHE
+> Task :feature:vocal:compileDebugLibraryResources FROM-CACHE
+> Task :feature:studio:parseDebugLocalResources FROM-CACHE
+> Task :feature:vocal:parseDebugLocalResources FROM-CACHE
+> Task :feature:studio:generateDebugRFile
+> Task :core:audio:checkKotlinGradlePluginConfigurationErrors
+> Task :core:storage:checkKotlinGradlePluginConfigurationErrors
+> Task :feature:vocal:generateDebugRFile
+> Task :core:storage:javaPreCompileDebug
+> Task :core:database:checkKotlinGradlePluginConfigurationErrors
+> Task :core:audio:javaPreCompileDebug
+> Task :core:designsystem:checkKotlinGradlePluginConfigurationErrors
+> Task :core:designsystem:javaPreCompileDebug FROM-CACHE
+> Task :feature:arrangement:checkKotlinGradlePluginConfigurationErrors
+> Task :feature:arrangement:javaPreCompileDebug FROM-CACHE
+> Task :feature:automation:checkKotlinGradlePluginConfigurationErrors
+> Task :feature:automation:javaPreCompileDebug FROM-CACHE
+> Task :feature:drums:checkKotlinGradlePluginConfigurationErrors
+> Task :feature:drums:javaPreCompileDebug FROM-CACHE
+> Task :feature:effects:checkKotlinGradlePluginConfigurationErrors
+> Task :feature:effects:javaPreCompileDebug FROM-CACHE
+> Task :feature:export:checkKotlinGradlePluginConfigurationErrors
+> Task :feature:export:javaPreCompileDebug FROM-CACHE
+> Task :feature:home:checkKotlinGradlePluginConfigurationErrors
+> Task :feature:home:javaPreCompileDebug FROM-CACHE
+> Task :feature:instruments:checkKotlinGradlePluginConfigurationErrors
+> Task :feature:instruments:javaPreCompileDebug FROM-CACHE
+> Task :feature:mixer:checkKotlinGradlePluginConfigurationErrors
+> Task :feature:mixer:javaPreCompileDebug FROM-CACHE
+> Task :feature:pianoroll:checkKotlinGradlePluginConfigurationErrors
+> Task :feature:pianoroll:javaPreCompileDebug FROM-CACHE
+> Task :feature:recording:checkKotlinGradlePluginConfigurationErrors
+> Task :feature:recording:javaPreCompileDebug FROM-CACHE
+> Task :feature:settings:checkKotlinGradlePluginConfigurationErrors
+> Task :feature:settings:javaPreCompileDebug FROM-CACHE
+> Task :feature:sounds:checkKotlinGradlePluginConfigurationErrors
+> Task :feature:sounds:javaPreCompileDebug FROM-CACHE
+> Task :feature:studio:checkKotlinGradlePluginConfigurationErrors
+> Task :feature:studio:javaPreCompileDebug FROM-CACHE
+> Task :feature:vocal:checkKotlinGradlePluginConfigurationErrors
+> Task :feature:vocal:javaPreCompileDebug FROM-CACHE
+> Task :core:audio:preReleaseBuild UP-TO-DATE
+> Task :core:audio:writeReleaseAarMetadata
+> Task :core:designsystem:preReleaseBuild UP-TO-DATE
+> Task :core:designsystem:writeReleaseAarMetadata
+> Task :core:storage:preReleaseBuild UP-TO-DATE
+> Task :core:storage:writeReleaseAarMetadata
+> Task :feature:arrangement:preReleaseBuild UP-TO-DATE
+> Task :feature:arrangement:writeReleaseAarMetadata
+> Task :feature:automation:preReleaseBuild UP-TO-DATE
+> Task :feature:automation:writeReleaseAarMetadata
+> Task :feature:drums:preReleaseBuild UP-TO-DATE
+> Task :feature:drums:writeReleaseAarMetadata
+> Task :feature:effects:preReleaseBuild UP-TO-DATE
+> Task :feature:effects:writeReleaseAarMetadata
+> Task :feature:export:preReleaseBuild UP-TO-DATE
+> Task :feature:export:writeReleaseAarMetadata
+> Task :feature:home:preReleaseBuild UP-TO-DATE
+> Task :feature:home:writeReleaseAarMetadata
+> Task :feature:instruments:preReleaseBuild UP-TO-DATE
+> Task :feature:instruments:writeReleaseAarMetadata
+> Task :feature:mixer:preReleaseBuild UP-TO-DATE
+> Task :feature:mixer:writeReleaseAarMetadata
+> Task :feature:pianoroll:preReleaseBuild UP-TO-DATE
+> Task :feature:pianoroll:writeReleaseAarMetadata
+> Task :feature:recording:preReleaseBuild UP-TO-DATE
+> Task :feature:recording:writeReleaseAarMetadata
+> Task :feature:settings:preReleaseBuild UP-TO-DATE
+> Task :feature:settings:writeReleaseAarMetadata
+> Task :feature:sounds:preReleaseBuild UP-TO-DATE
+> Task :feature:sounds:writeReleaseAarMetadata
+> Task :feature:studio:preReleaseBuild UP-TO-DATE
+> Task :feature:studio:writeReleaseAarMetadata
+> Task :feature:vocal:preReleaseBuild UP-TO-DATE
+> Task :feature:vocal:writeReleaseAarMetadata
+> Task :core:audio:generateReleaseResValues FROM-CACHE
+> Task :core:audio:generateReleaseResources
+> Task :core:audio:packageReleaseResources
+> Task :core:designsystem:generateReleaseResValues FROM-CACHE
+> Task :core:designsystem:generateReleaseResources FROM-CACHE
+> Task :core:designsystem:packageReleaseResources
+> Task :core:storage:generateReleaseResValues FROM-CACHE
+> Task :core:storage:generateReleaseResources FROM-CACHE
+> Task :core:storage:packageReleaseResources
+> Task :feature:arrangement:generateReleaseResValues FROM-CACHE
+> Task :feature:arrangement:generateReleaseResources FROM-CACHE
+> Task :feature:arrangement:packageReleaseResources
+> Task :feature:automation:generateReleaseResValues FROM-CACHE
+> Task :feature:automation:generateReleaseResources FROM-CACHE
+> Task :feature:automation:packageReleaseResources
+> Task :feature:drums:generateReleaseResValues FROM-CACHE
+> Task :feature:drums:generateReleaseResources FROM-CACHE
+> Task :feature:drums:packageReleaseResources
+> Task :feature:effects:generateReleaseResValues FROM-CACHE
+> Task :feature:effects:generateReleaseResources FROM-CACHE
+> Task :feature:effects:packageReleaseResources
+> Task :feature:export:generateReleaseResValues FROM-CACHE
+> Task :feature:export:generateReleaseResources FROM-CACHE
+> Task :feature:export:packageReleaseResources
+> Task :feature:home:generateReleaseResValues FROM-CACHE
+> Task :feature:home:generateReleaseResources FROM-CACHE
+> Task :feature:home:packageReleaseResources
+> Task :feature:instruments:generateReleaseResValues FROM-CACHE
+> Task :feature:instruments:generateReleaseResources FROM-CACHE
+> Task :feature:instruments:packageReleaseResources
+> Task :feature:mixer:generateReleaseResValues FROM-CACHE
+> Task :feature:mixer:generateReleaseResources FROM-CACHE
+> Task :feature:mixer:packageReleaseResources
+> Task :feature:pianoroll:generateReleaseResValues FROM-CACHE
+> Task :feature:pianoroll:generateReleaseResources FROM-CACHE
+> Task :feature:pianoroll:packageReleaseResources
+> Task :feature:recording:generateReleaseResValues FROM-CACHE
+> Task :feature:recording:generateReleaseResources FROM-CACHE
+> Task :feature:recording:packageReleaseResources
+> Task :feature:settings:generateReleaseResValues FROM-CACHE
+> Task :feature:settings:generateReleaseResources FROM-CACHE
+> Task :feature:settings:packageReleaseResources
+> Task :feature:sounds:generateReleaseResValues FROM-CACHE
+> Task :feature:sounds:generateReleaseResources FROM-CACHE
+> Task :feature:sounds:packageReleaseResources
+> Task :feature:studio:generateReleaseResValues FROM-CACHE
+> Task :feature:studio:generateReleaseResources FROM-CACHE
+> Task :feature:studio:packageReleaseResources
+> Task :feature:vocal:generateReleaseResValues FROM-CACHE
+> Task :feature:vocal:generateReleaseResources FROM-CACHE
+> Task :feature:vocal:packageReleaseResources
+> Task :core:audio:extractDeepLinksRelease FROM-CACHE
+> Task :core:audio:processReleaseManifest FROM-CACHE
+> Task :core:designsystem:extractDeepLinksRelease FROM-CACHE
+> Task :core:designsystem:processReleaseManifest FROM-CACHE
+> Task :core:storage:extractDeepLinksRelease FROM-CACHE
+> Task :core:storage:processReleaseManifest FROM-CACHE
+> Task :feature:arrangement:extractDeepLinksRelease FROM-CACHE
+> Task :feature:arrangement:processReleaseManifest FROM-CACHE
+> Task :feature:automation:extractDeepLinksRelease FROM-CACHE
+> Task :feature:automation:processReleaseManifest FROM-CACHE
+> Task :feature:drums:extractDeepLinksRelease FROM-CACHE
+> Task :feature:drums:processReleaseManifest FROM-CACHE
+> Task :feature:effects:extractDeepLinksRelease FROM-CACHE
+> Task :feature:effects:processReleaseManifest FROM-CACHE
+> Task :feature:export:extractDeepLinksRelease FROM-CACHE
+> Task :feature:export:processReleaseManifest FROM-CACHE
+> Task :feature:home:extractDeepLinksRelease FROM-CACHE
+> Task :feature:home:processReleaseManifest FROM-CACHE
+> Task :feature:instruments:extractDeepLinksRelease FROM-CACHE
+> Task :feature:instruments:processReleaseManifest FROM-CACHE
+> Task :feature:mixer:extractDeepLinksRelease FROM-CACHE
+> Task :feature:mixer:processReleaseManifest FROM-CACHE
+> Task :feature:pianoroll:extractDeepLinksRelease FROM-CACHE
+> Task :feature:pianoroll:processReleaseManifest FROM-CACHE
+> Task :feature:recording:extractDeepLinksRelease FROM-CACHE
+> Task :feature:recording:processReleaseManifest FROM-CACHE
+> Task :feature:settings:extractDeepLinksRelease FROM-CACHE
+> Task :feature:settings:processReleaseManifest FROM-CACHE
+> Task :feature:sounds:extractDeepLinksRelease FROM-CACHE
+> Task :feature:sounds:processReleaseManifest FROM-CACHE
+> Task :feature:studio:extractDeepLinksRelease FROM-CACHE
+> Task :feature:studio:processReleaseManifest FROM-CACHE
+> Task :feature:vocal:extractDeepLinksRelease FROM-CACHE
+> Task :feature:vocal:processReleaseManifest FROM-CACHE
+> Task :core:audio:compileReleaseLibraryResources
+> Task :core:audio:parseReleaseLocalResources FROM-CACHE
+> Task :core:audio:generateReleaseRFile FROM-CACHE
+> Task :core:designsystem:compileReleaseLibraryResources FROM-CACHE
+> Task :core:designsystem:parseReleaseLocalResources FROM-CACHE
+> Task :core:designsystem:generateReleaseRFile FROM-CACHE
+> Task :core:storage:compileReleaseLibraryResources FROM-CACHE
+> Task :core:storage:parseReleaseLocalResources FROM-CACHE
+> Task :core:storage:generateReleaseRFile FROM-CACHE
+> Task :feature:arrangement:compileReleaseLibraryResources FROM-CACHE
+> Task :feature:arrangement:parseReleaseLocalResources FROM-CACHE
+> Task :feature:arrangement:generateReleaseRFile FROM-CACHE
+> Task :feature:automation:compileReleaseLibraryResources FROM-CACHE
+> Task :feature:automation:parseReleaseLocalResources FROM-CACHE
+> Task :feature:automation:generateReleaseRFile FROM-CACHE
+> Task :feature:drums:compileReleaseLibraryResources FROM-CACHE
+> Task :feature:drums:parseReleaseLocalResources FROM-CACHE
+> Task :feature:drums:generateReleaseRFile FROM-CACHE
+> Task :feature:effects:compileReleaseLibraryResources FROM-CACHE
+> Task :feature:effects:parseReleaseLocalResources FROM-CACHE
+> Task :feature:effects:generateReleaseRFile FROM-CACHE
+> Task :feature:export:compileReleaseLibraryResources FROM-CACHE
+> Task :feature:export:parseReleaseLocalResources FROM-CACHE
+> Task :feature:export:generateReleaseRFile FROM-CACHE
+> Task :feature:home:compileReleaseLibraryResources FROM-CACHE
+> Task :feature:home:parseReleaseLocalResources FROM-CACHE
+> Task :feature:home:generateReleaseRFile FROM-CACHE
+> Task :feature:instruments:compileReleaseLibraryResources FROM-CACHE
+> Task :feature:instruments:parseReleaseLocalResources FROM-CACHE
+> Task :feature:instruments:generateReleaseRFile FROM-CACHE
+> Task :feature:mixer:compileReleaseLibraryResources FROM-CACHE
+> Task :feature:mixer:parseReleaseLocalResources FROM-CACHE
+> Task :feature:mixer:generateReleaseRFile FROM-CACHE
+> Task :feature:pianoroll:compileReleaseLibraryResources FROM-CACHE
+> Task :feature:pianoroll:parseReleaseLocalResources FROM-CACHE
+> Task :feature:pianoroll:generateReleaseRFile FROM-CACHE
+> Task :feature:recording:compileReleaseLibraryResources FROM-CACHE
+> Task :feature:recording:parseReleaseLocalResources FROM-CACHE
+> Task :feature:recording:generateReleaseRFile FROM-CACHE
+> Task :feature:settings:compileReleaseLibraryResources FROM-CACHE
+> Task :feature:settings:parseReleaseLocalResources FROM-CACHE
+> Task :feature:settings:generateReleaseRFile FROM-CACHE
+> Task :feature:sounds:compileReleaseLibraryResources FROM-CACHE
+> Task :feature:sounds:parseReleaseLocalResources FROM-CACHE
+> Task :feature:sounds:generateReleaseRFile FROM-CACHE
+> Task :feature:studio:compileReleaseLibraryResources FROM-CACHE
+> Task :feature:studio:parseReleaseLocalResources FROM-CACHE
+> Task :feature:studio:generateReleaseRFile FROM-CACHE
+> Task :feature:vocal:compileReleaseLibraryResources FROM-CACHE
+> Task :feature:vocal:parseReleaseLocalResources FROM-CACHE
+> Task :feature:vocal:generateReleaseRFile FROM-CACHE
+> Task :core:storage:javaPreCompileRelease FROM-CACHE
+> Task :core:audio:javaPreCompileRelease FROM-CACHE
+> Task :core:designsystem:javaPreCompileRelease FROM-CACHE
+> Task :feature:arrangement:javaPreCompileRelease FROM-CACHE
+> Task :feature:automation:javaPreCompileRelease FROM-CACHE
+> Task :feature:drums:javaPreCompileRelease FROM-CACHE
+> Task :feature:effects:javaPreCompileRelease FROM-CACHE
+> Task :feature:export:javaPreCompileRelease FROM-CACHE
+> Task :feature:home:javaPreCompileRelease FROM-CACHE
+> Task :feature:instruments:javaPreCompileRelease FROM-CACHE
+> Task :feature:mixer:javaPreCompileRelease FROM-CACHE
+> Task :feature:pianoroll:javaPreCompileRelease FROM-CACHE
+> Task :feature:recording:javaPreCompileRelease FROM-CACHE
+> Task :feature:settings:javaPreCompileRelease FROM-CACHE
+> Task :feature:sounds:javaPreCompileRelease FROM-CACHE
+> Task :feature:studio:javaPreCompileRelease FROM-CACHE
+> Task :feature:vocal:javaPreCompileRelease FROM-CACHE
+> Task :core:audio:preDebugUnitTestBuild UP-TO-DATE
+> Task :core:database:javaPreCompileDebug
+> Task :core:database:preReleaseBuild UP-TO-DATE
+> Task :core:database:writeReleaseAarMetadata
+> Task :core:database:generateReleaseResValues FROM-CACHE
+> Task :core:database:generateReleaseResources FROM-CACHE
+> Task :core:database:packageReleaseResources
+> Task :core:database:extractDeepLinksRelease FROM-CACHE
+> Task :core:database:processReleaseManifest FROM-CACHE
+> Task :core:database:compileReleaseLibraryResources FROM-CACHE
+> Task :core:database:parseReleaseLocalResources FROM-CACHE
+> Task :core:database:generateReleaseRFile FROM-CACHE
+> Task :core:database:javaPreCompileRelease FROM-CACHE
+> Task :core:common:processTestResources NO-SOURCE
+> Task :core:database:preDebugUnitTestBuild UP-TO-DATE
+> Task :core:database:generateDebugUnitTestStubRFile
+> Task :core:database:javaPreCompileDebugUnitTest FROM-CACHE
+> Task :core:database:preReleaseUnitTestBuild UP-TO-DATE
+> Task :core:database:generateReleaseUnitTestStubRFile FROM-CACHE
+> Task :core:database:javaPreCompileReleaseUnitTest FROM-CACHE
+> Task :core:designsystem:preDebugUnitTestBuild UP-TO-DATE
+> Task :core:audio:generateDebugUnitTestStubRFile
+> Task :core:audio:javaPreCompileDebugUnitTest FROM-CACHE
+> Task :core:audio:preReleaseUnitTestBuild UP-TO-DATE
+> Task :core:audio:generateReleaseUnitTestStubRFile FROM-CACHE
+> Task :core:audio:javaPreCompileReleaseUnitTest FROM-CACHE
+> Task :core:dsp:processTestResources NO-SOURCE
+> Task :core:midi:processTestResources NO-SOURCE
+> Task :core:project:processTestResources NO-SOURCE
+> Task :core:storage:preDebugUnitTestBuild UP-TO-DATE
+> Task :core:storage:generateDebugUnitTestStubRFile
+> Task :core:storage:javaPreCompileDebugUnitTest FROM-CACHE
+> Task :core:storage:preReleaseUnitTestBuild UP-TO-DATE
+> Task :core:storage:generateReleaseUnitTestStubRFile FROM-CACHE
+> Task :core:storage:javaPreCompileReleaseUnitTest FROM-CACHE
+> Task :feature:arrangement:preDebugUnitTestBuild UP-TO-DATE
+> Task :feature:arrangement:generateDebugUnitTestStubRFile
+> Task :feature:arrangement:javaPreCompileDebugUnitTest FROM-CACHE
+> Task :app:checkDebugAarMetadata
+> Task :feature:arrangement:preReleaseUnitTestBuild UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths
+> Task :feature:arrangement:generateReleaseUnitTestStubRFile
+> Task :app:generateDebugResources
+> Task :core:designsystem:generateDebugUnitTestStubRFile
+> Task :core:designsystem:javaPreCompileDebugUnitTest FROM-CACHE
+> Task :feature:arrangement:javaPreCompileReleaseUnitTest FROM-CACHE
+> Task :core:designsystem:preReleaseUnitTestBuild UP-TO-DATE
+> Task :feature:automation:preDebugUnitTestBuild UP-TO-DATE
+> Task :feature:automation:generateDebugUnitTestStubRFile
+> Task :core:designsystem:generateReleaseUnitTestStubRFile
+> Task :core:designsystem:javaPreCompileReleaseUnitTest FROM-CACHE
+> Task :feature:drums:preDebugUnitTestBuild UP-TO-DATE
+> Task :feature:automation:javaPreCompileDebugUnitTest FROM-CACHE
+> Task :feature:automation:preReleaseUnitTestBuild UP-TO-DATE
+> Task :feature:automation:generateReleaseUnitTestStubRFile
+> Task :feature:automation:javaPreCompileReleaseUnitTest FROM-CACHE
+> Task :feature:drums:generateDebugUnitTestStubRFile
+> Task :feature:effects:preDebugUnitTestBuild UP-TO-DATE
+> Task :feature:drums:javaPreCompileDebugUnitTest FROM-CACHE
+> Task :feature:drums:preReleaseUnitTestBuild UP-TO-DATE
+> Task :feature:effects:generateDebugUnitTestStubRFile
+> Task :feature:drums:javaPreCompileReleaseUnitTest FROM-CACHE
+> Task :feature:effects:javaPreCompileDebugUnitTest FROM-CACHE
+> Task :feature:effects:preReleaseUnitTestBuild UP-TO-DATE
+> Task :feature:drums:generateReleaseUnitTestStubRFile
+> Task :feature:export:preDebugUnitTestBuild UP-TO-DATE
+> Task :feature:effects:generateReleaseUnitTestStubRFile
+> Task :feature:export:generateDebugUnitTestStubRFile
+> Task :feature:effects:javaPreCompileReleaseUnitTest FROM-CACHE
+> Task :feature:home:preDebugUnitTestBuild UP-TO-DATE
+> Task :feature:export:javaPreCompileDebugUnitTest FROM-CACHE
+> Task :feature:export:preReleaseUnitTestBuild UP-TO-DATE
+> Task :feature:export:generateReleaseUnitTestStubRFile
+> Task :feature:export:javaPreCompileReleaseUnitTest FROM-CACHE
+> Task :feature:home:javaPreCompileDebugUnitTest FROM-CACHE
+> Task :feature:home:preReleaseUnitTestBuild UP-TO-DATE
+> Task :feature:home:generateDebugUnitTestStubRFile
+> Task :feature:instruments:preDebugUnitTestBuild UP-TO-DATE
+> Task :feature:home:generateReleaseUnitTestStubRFile
+> Task :feature:home:javaPreCompileReleaseUnitTest FROM-CACHE
+> Task :feature:mixer:preDebugUnitTestBuild UP-TO-DATE
+> Task :feature:instruments:generateDebugUnitTestStubRFile
+> Task :feature:instruments:javaPreCompileDebugUnitTest FROM-CACHE
+> Task :feature:instruments:preReleaseUnitTestBuild UP-TO-DATE
+> Task :feature:mixer:generateDebugUnitTestStubRFile
+> Task :feature:mixer:javaPreCompileDebugUnitTest FROM-CACHE
+> Task :feature:mixer:preReleaseUnitTestBuild UP-TO-DATE
+> Task :feature:instruments:generateReleaseUnitTestStubRFile
+> Task :feature:instruments:javaPreCompileReleaseUnitTest FROM-CACHE
+> Task :feature:pianoroll:preDebugUnitTestBuild UP-TO-DATE
+> Task :feature:mixer:generateReleaseUnitTestStubRFile
+> Task :feature:mixer:javaPreCompileReleaseUnitTest FROM-CACHE
+> Task :feature:recording:preDebugUnitTestBuild UP-TO-DATE
+> Task :feature:pianoroll:generateDebugUnitTestStubRFile
+> Task :feature:pianoroll:javaPreCompileDebugUnitTest FROM-CACHE
+> Task :feature:pianoroll:preReleaseUnitTestBuild UP-TO-DATE
+> Task :feature:recording:generateDebugUnitTestStubRFile
+> Task :feature:recording:javaPreCompileDebugUnitTest FROM-CACHE
+> Task :feature:recording:preReleaseUnitTestBuild UP-TO-DATE
+> Task :feature:pianoroll:generateReleaseUnitTestStubRFile
+> Task :feature:pianoroll:javaPreCompileReleaseUnitTest FROM-CACHE
+> Task :feature:settings:preDebugUnitTestBuild UP-TO-DATE
+> Task :feature:recording:generateReleaseUnitTestStubRFile
+> Task :feature:recording:javaPreCompileReleaseUnitTest FROM-CACHE
+> Task :feature:sounds:preDebugUnitTestBuild UP-TO-DATE
+> Task :feature:settings:generateDebugUnitTestStubRFile
+> Task :feature:settings:javaPreCompileDebugUnitTest FROM-CACHE
+> Task :feature:settings:preReleaseUnitTestBuild UP-TO-DATE
+> Task :feature:sounds:generateDebugUnitTestStubRFile
+> Task :feature:sounds:javaPreCompileDebugUnitTest FROM-CACHE
+> Task :feature:sounds:preReleaseUnitTestBuild UP-TO-DATE
+> Task :feature:settings:generateReleaseUnitTestStubRFile
+> Task :feature:settings:javaPreCompileReleaseUnitTest FROM-CACHE
+> Task :feature:sounds:generateReleaseUnitTestStubRFile
+> Task :feature:studio:preDebugUnitTestBuild UP-TO-DATE
+> Task :feature:sounds:javaPreCompileReleaseUnitTest FROM-CACHE
+> Task :feature:vocal:preDebugUnitTestBuild UP-TO-DATE
+> Task :feature:studio:generateDebugUnitTestStubRFile
+> Task :feature:studio:javaPreCompileDebugUnitTest FROM-CACHE
+> Task :feature:studio:preReleaseUnitTestBuild UP-TO-DATE
+> Task :feature:vocal:generateDebugUnitTestStubRFile
+> Task :feature:vocal:javaPreCompileDebugUnitTest FROM-CACHE
+> Task :feature:vocal:preReleaseUnitTestBuild UP-TO-DATE
+> Task :feature:studio:javaPreCompileReleaseUnitTest FROM-CACHE
+> Task :feature:studio:generateReleaseUnitTestStubRFile
+> Task :core:common:compileKotlin
+> Task :core:common:compileJava NO-SOURCE
+> Task :core:common:classes UP-TO-DATE
+> Task :feature:vocal:generateReleaseUnitTestStubRFile
+> Task :core:audio:mergeDebugShaders
+> Task :core:audio:compileDebugShaders NO-SOURCE
+> Task :core:audio:generateDebugAssets UP-TO-DATE
+> Task :feature:vocal:javaPreCompileReleaseUnitTest FROM-CACHE
+> Task :core:common:jar
+> Task :core:audio:packageDebugAssets
+> Task :core:database:mergeDebugShaders
+> Task :app:mergeDebugResources
+> Task :core:common:compileTestKotlin
+> Task :app:packageDebugResources
+> Task :core:common:compileTestJava NO-SOURCE
+> Task :core:common:testClasses UP-TO-DATE
+> Task :app:parseDebugLocalResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug FROM-CACHE
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :app:processDebugManifestForPackage
+> Task :core:common:test
+> Task :core:database:compileDebugShaders NO-SOURCE
+> Task :core:database:generateDebugAssets UP-TO-DATE
+> Task :core:database:packageDebugAssets
+> Task :core:designsystem:mergeDebugShaders
+> Task :core:designsystem:compileDebugShaders NO-SOURCE
+> Task :core:designsystem:generateDebugAssets UP-TO-DATE
+> Task :core:designsystem:packageDebugAssets
+> Task :core:storage:mergeDebugShaders
+> Task :core:storage:compileDebugShaders NO-SOURCE
+> Task :core:storage:generateDebugAssets UP-TO-DATE
+> Task :core:storage:packageDebugAssets
+> Task :feature:arrangement:mergeDebugShaders
+> Task :feature:arrangement:compileDebugShaders NO-SOURCE
+> Task :feature:arrangement:generateDebugAssets UP-TO-DATE
+> Task :feature:arrangement:packageDebugAssets
+> Task :feature:automation:mergeDebugShaders
+> Task :app:processDebugResources
+> Task :feature:automation:compileDebugShaders NO-SOURCE
+> Task :feature:automation:generateDebugAssets UP-TO-DATE
+> Task :feature:automation:packageDebugAssets
+> Task :feature:drums:mergeDebugShaders
+> Task :feature:drums:compileDebugShaders NO-SOURCE
+> Task :feature:drums:generateDebugAssets UP-TO-DATE
+> Task :feature:drums:packageDebugAssets
+> Task :feature:effects:mergeDebugShaders
+> Task :feature:effects:compileDebugShaders NO-SOURCE
+> Task :feature:effects:generateDebugAssets UP-TO-DATE
+> Task :feature:effects:packageDebugAssets
+> Task :feature:export:mergeDebugShaders
+> Task :feature:export:compileDebugShaders NO-SOURCE
+> Task :feature:export:generateDebugAssets UP-TO-DATE
+> Task :feature:export:packageDebugAssets
+> Task :feature:home:mergeDebugShaders
+> Task :feature:home:compileDebugShaders NO-SOURCE
+> Task :feature:home:generateDebugAssets UP-TO-DATE
+> Task :feature:home:packageDebugAssets
+> Task :feature:instruments:mergeDebugShaders
+> Task :feature:instruments:compileDebugShaders NO-SOURCE
+> Task :feature:instruments:generateDebugAssets UP-TO-DATE
+> Task :feature:instruments:packageDebugAssets
+> Task :feature:mixer:mergeDebugShaders
+> Task :feature:mixer:compileDebugShaders NO-SOURCE
+> Task :feature:mixer:generateDebugAssets UP-TO-DATE
+> Task :feature:mixer:packageDebugAssets
+> Task :feature:pianoroll:mergeDebugShaders
+> Task :feature:pianoroll:compileDebugShaders NO-SOURCE
+> Task :feature:pianoroll:generateDebugAssets UP-TO-DATE
+> Task :feature:pianoroll:packageDebugAssets
+> Task :feature:recording:mergeDebugShaders
+> Task :feature:recording:compileDebugShaders NO-SOURCE
+> Task :feature:recording:generateDebugAssets UP-TO-DATE
+> Task :feature:recording:packageDebugAssets
+> Task :feature:settings:mergeDebugShaders
+> Task :feature:settings:compileDebugShaders NO-SOURCE
+> Task :feature:settings:generateDebugAssets UP-TO-DATE
+> Task :feature:settings:packageDebugAssets
+> Task :feature:sounds:mergeDebugShaders
+> Task :feature:sounds:compileDebugShaders NO-SOURCE
+> Task :feature:sounds:generateDebugAssets UP-TO-DATE
+> Task :feature:sounds:packageDebugAssets
+> Task :feature:studio:mergeDebugShaders
+> Task :feature:studio:compileDebugShaders NO-SOURCE
+> Task :feature:studio:generateDebugAssets UP-TO-DATE
+> Task :feature:studio:packageDebugAssets
+> Task :feature:vocal:mergeDebugShaders
+> Task :feature:vocal:compileDebugShaders NO-SOURCE
+> Task :feature:vocal:generateDebugAssets UP-TO-DATE
+> Task :feature:vocal:packageDebugAssets
+> Task :app:javaPreCompileDebug
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompileDebugUnitTest FROM-CACHE
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:buildKotlinToolingMetadata
+> Task :app:checkReleaseAarMetadata
+> Task :app:generateReleaseResValues FROM-CACHE
+> Task :app:mapReleaseSourceSetPaths
+> Task :app:generateReleaseResources
+
+> Task :core:midi:compileKotlin
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/core/midi/src/main/kotlin/com/sorastudio/core/midi/MidiFile.kt:166:24 Variable 'value' is never used
+
+> Task :core:midi:compileJava NO-SOURCE
+> Task :core:midi:classes UP-TO-DATE
+> Task :core:midi:jar
+> Task :app:mergeReleaseResources
+> Task :app:packageReleaseResources
+> Task :app:parseReleaseLocalResources FROM-CACHE
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease FROM-CACHE
+> Task :app:processReleaseMainManifest
+> Task :app:processReleaseManifest
+> Task :app:processReleaseManifestForPackage
+> Task :app:javaPreCompileRelease FROM-CACHE
+> Task :app:preReleaseUnitTestBuild UP-TO-DATE
+> Task :core:midi:compileTestKotlin
+> Task :core:midi:compileTestJava NO-SOURCE
+> Task :core:midi:testClasses UP-TO-DATE
+> Task :app:javaPreCompileReleaseUnitTest FROM-CACHE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets
+> Task :app:compressDebugAssets
+> Task :app:processReleaseResources
+> Task :app:desugarDebugFileDependencies
+> Task :core:audio:mergeDebugJniLibFolders
+> Task :core:audio:mergeDebugNativeLibs NO-SOURCE
+> Task :core:midi:test
+> Task :core:database:mergeDebugJniLibFolders
+> Task :core:database:mergeDebugNativeLibs NO-SOURCE
+> Task :core:audio:copyDebugJniLibsProjectOnly
+> Task :core:database:copyDebugJniLibsProjectOnly
+> Task :core:designsystem:mergeDebugJniLibFolders
+> Task :core:storage:mergeDebugJniLibFolders
+> Task :core:designsystem:mergeDebugNativeLibs NO-SOURCE
+> Task :core:storage:mergeDebugNativeLibs NO-SOURCE
+> Task :core:storage:copyDebugJniLibsProjectOnly
+> Task :core:designsystem:copyDebugJniLibsProjectOnly
+> Task :feature:arrangement:mergeDebugJniLibFolders
+> Task :feature:automation:mergeDebugJniLibFolders
+> Task :feature:automation:mergeDebugNativeLibs NO-SOURCE
+> Task :feature:arrangement:mergeDebugNativeLibs NO-SOURCE
+> Task :feature:arrangement:copyDebugJniLibsProjectOnly
+> Task :feature:automation:copyDebugJniLibsProjectOnly
+> Task :feature:effects:mergeDebugJniLibFolders
+> Task :feature:drums:mergeDebugJniLibFolders
+> Task :feature:drums:mergeDebugNativeLibs NO-SOURCE
+> Task :feature:effects:mergeDebugNativeLibs NO-SOURCE
+> Task :feature:effects:copyDebugJniLibsProjectOnly
+> Task :feature:drums:copyDebugJniLibsProjectOnly
+> Task :feature:export:mergeDebugJniLibFolders
+> Task :feature:export:mergeDebugNativeLibs NO-SOURCE
+> Task :feature:home:mergeDebugJniLibFolders
+> Task :feature:home:mergeDebugNativeLibs NO-SOURCE
+> Task :feature:export:copyDebugJniLibsProjectOnly
+> Task :feature:home:copyDebugJniLibsProjectOnly
+> Task :feature:instruments:mergeDebugJniLibFolders
+> Task :feature:mixer:mergeDebugJniLibFolders
+> Task :feature:instruments:mergeDebugNativeLibs NO-SOURCE
+> Task :feature:mixer:mergeDebugNativeLibs NO-SOURCE
+> Task :feature:mixer:copyDebugJniLibsProjectOnly
+> Task :feature:instruments:copyDebugJniLibsProjectOnly
+> Task :feature:pianoroll:mergeDebugJniLibFolders
+> Task :feature:pianoroll:mergeDebugNativeLibs NO-SOURCE
+> Task :feature:recording:mergeDebugJniLibFolders
+> Task :feature:pianoroll:copyDebugJniLibsProjectOnly
+> Task :feature:recording:mergeDebugNativeLibs NO-SOURCE
+> Task :feature:recording:copyDebugJniLibsProjectOnly
+> Task :feature:settings:mergeDebugJniLibFolders
+> Task :feature:sounds:mergeDebugJniLibFolders
+> Task :feature:settings:mergeDebugNativeLibs NO-SOURCE
+> Task :feature:settings:copyDebugJniLibsProjectOnly
+> Task :feature:sounds:mergeDebugNativeLibs NO-SOURCE
+> Task :feature:studio:mergeDebugJniLibFolders
+> Task :feature:sounds:copyDebugJniLibsProjectOnly
+> Task :feature:vocal:mergeDebugJniLibFolders
+> Task :feature:studio:mergeDebugNativeLibs NO-SOURCE
+> Task :feature:vocal:mergeDebugNativeLibs NO-SOURCE
+> Task :feature:studio:copyDebugJniLibsProjectOnly
+> Task :core:audio:stripDebugDebugSymbols NO-SOURCE
+> Task :feature:vocal:copyDebugJniLibsProjectOnly
+> Task :core:database:stripDebugDebugSymbols NO-SOURCE
+> Task :core:audio:copyDebugJniLibsProjectAndLocalJars
+> Task :core:audio:extractDeepLinksForAarDebug
+> Task :core:database:copyDebugJniLibsProjectAndLocalJars
+> Task :core:audio:prepareDebugArtProfile
+> Task :core:database:extractDeepLinksForAarDebug FROM-CACHE
+> Task :core:database:prepareDebugArtProfile
+> Task :core:database:prepareLintJarForPublish
+> Task :core:audio:prepareLintJarForPublish
+> Task :core:designsystem:stripDebugDebugSymbols NO-SOURCE
+> Task :core:storage:stripDebugDebugSymbols NO-SOURCE
+> Task :core:storage:copyDebugJniLibsProjectAndLocalJars
+> Task :core:designsystem:copyDebugJniLibsProjectAndLocalJars
+> Task :core:designsystem:extractDeepLinksForAarDebug FROM-CACHE
+> Task :core:storage:extractDeepLinksForAarDebug FROM-CACHE
+> Task :core:designsystem:prepareDebugArtProfile
+> Task :core:storage:prepareDebugArtProfile
+> Task :core:storage:prepareLintJarForPublish
+> Task :core:designsystem:prepareLintJarForPublish
+> Task :feature:arrangement:stripDebugDebugSymbols NO-SOURCE
+> Task :feature:automation:stripDebugDebugSymbols NO-SOURCE
+> Task :feature:automation:copyDebugJniLibsProjectAndLocalJars
+> Task :feature:arrangement:copyDebugJniLibsProjectAndLocalJars
+> Task :feature:arrangement:extractDeepLinksForAarDebug FROM-CACHE
+> Task :feature:automation:extractDeepLinksForAarDebug FROM-CACHE
+> Task :feature:automation:prepareDebugArtProfile
+> Task :feature:arrangement:prepareDebugArtProfile
+> Task :feature:arrangement:prepareLintJarForPublish
+> Task :feature:automation:prepareLintJarForPublish
+> Task :feature:effects:stripDebugDebugSymbols NO-SOURCE
+> Task :feature:drums:stripDebugDebugSymbols NO-SOURCE
+> Task :feature:effects:copyDebugJniLibsProjectAndLocalJars
+> Task :feature:drums:copyDebugJniLibsProjectAndLocalJars
+> Task :feature:effects:extractDeepLinksForAarDebug FROM-CACHE
+> Task :feature:drums:extractDeepLinksForAarDebug FROM-CACHE
+> Task :feature:effects:prepareDebugArtProfile
+> Task :feature:drums:prepareDebugArtProfile
+> Task :feature:effects:prepareLintJarForPublish
+> Task :feature:drums:prepareLintJarForPublish
+> Task :feature:export:stripDebugDebugSymbols NO-SOURCE
+> Task :feature:home:stripDebugDebugSymbols NO-SOURCE
+> Task :feature:export:copyDebugJniLibsProjectAndLocalJars
+> Task :feature:export:extractDeepLinksForAarDebug FROM-CACHE
+> Task :feature:home:copyDebugJniLibsProjectAndLocalJars
+> Task :feature:home:extractDeepLinksForAarDebug FROM-CACHE
+> Task :feature:export:prepareDebugArtProfile
+> Task :feature:home:prepareDebugArtProfile
+> Task :feature:export:prepareLintJarForPublish
+> Task :feature:instruments:stripDebugDebugSymbols NO-SOURCE
+> Task :feature:home:prepareLintJarForPublish
+> Task :feature:instruments:extractDeepLinksForAarDebug FROM-CACHE
+> Task :feature:instruments:copyDebugJniLibsProjectAndLocalJars
+> Task :feature:mixer:stripDebugDebugSymbols NO-SOURCE
+> Task :feature:instruments:prepareDebugArtProfile
+> Task :feature:mixer:copyDebugJniLibsProjectAndLocalJars
+> Task :feature:instruments:prepareLintJarForPublish
+> Task :feature:mixer:extractDeepLinksForAarDebug FROM-CACHE
+> Task :feature:pianoroll:stripDebugDebugSymbols NO-SOURCE
+> Task :feature:mixer:prepareDebugArtProfile
+> Task :feature:pianoroll:copyDebugJniLibsProjectAndLocalJars
+> Task :feature:mixer:prepareLintJarForPublish
+> Task :feature:pianoroll:extractDeepLinksForAarDebug FROM-CACHE
+> Task :feature:recording:stripDebugDebugSymbols NO-SOURCE
+> Task :feature:pianoroll:prepareDebugArtProfile
+> Task :feature:recording:copyDebugJniLibsProjectAndLocalJars
+> Task :feature:recording:extractDeepLinksForAarDebug FROM-CACHE
+> Task :feature:pianoroll:prepareLintJarForPublish
+> Task :feature:settings:stripDebugDebugSymbols NO-SOURCE
+> Task :feature:recording:prepareDebugArtProfile
+> Task :feature:settings:copyDebugJniLibsProjectAndLocalJars
+> Task :feature:settings:extractDeepLinksForAarDebug FROM-CACHE
+> Task :feature:recording:prepareLintJarForPublish
+> Task :feature:sounds:stripDebugDebugSymbols NO-SOURCE
+> Task :feature:settings:prepareDebugArtProfile
+> Task :feature:sounds:copyDebugJniLibsProjectAndLocalJars
+> Task :feature:sounds:extractDeepLinksForAarDebug FROM-CACHE
+> Task :feature:settings:prepareLintJarForPublish
+> Task :feature:sounds:prepareDebugArtProfile
+> Task :feature:studio:stripDebugDebugSymbols NO-SOURCE
+> Task :feature:studio:copyDebugJniLibsProjectAndLocalJars
+> Task :feature:sounds:prepareLintJarForPublish
+> Task :feature:studio:extractDeepLinksForAarDebug FROM-CACHE
+> Task :feature:vocal:stripDebugDebugSymbols NO-SOURCE
+> Task :feature:studio:prepareDebugArtProfile
+> Task :feature:vocal:copyDebugJniLibsProjectAndLocalJars
+> Task :feature:studio:prepareLintJarForPublish
+> Task :feature:vocal:extractDeepLinksForAarDebug FROM-CACHE
+> Task :core:audio:preDebugAndroidTestBuild UP-TO-DATE
+> Task :feature:vocal:prepareDebugArtProfile
+> Task :feature:vocal:prepareLintJarForPublish
+> Task :core:database:preDebugAndroidTestBuild UP-TO-DATE
+> Task :core:audio:checkDebugAndroidTestAarMetadata
+> Task :core:audio:generateDebugAndroidTestResValues FROM-CACHE
+> Task :core:audio:mapDebugAndroidTestSourceSetPaths
+> Task :core:audio:generateDebugAndroidTestResources
+> Task :core:audio:mergeDebugAndroidTestResources
+> Task :core:audio:processDebugAndroidTestManifest
+> Task :app:checkDebugDuplicateClasses
+> Task :app:mergeDebugStartupProfile
+> Task :core:database:checkDebugAndroidTestAarMetadata
+> Task :core:audio:javaPreCompileDebugAndroidTest FROM-CACHE
+> Task :core:audio:processDebugAndroidTestResources
+> Task :core:database:generateDebugAndroidTestResValues FROM-CACHE
+
+> Task :core:dsp:compileKotlin
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/core/dsp/src/main/kotlin/com/sorastudio/core/dsp/DrumSynth.kt:110:31 Parameter 'variant' is never used
+
+> Task :core:dsp:compileJava NO-SOURCE
+> Task :core:dsp:classes UP-TO-DATE
+> Task :core:dsp:jar
+> Task :app:mergeExtDexDebug
+> Task :core:audio:mergeDebugAndroidTestShaders
+> Task :core:database:mapDebugAndroidTestSourceSetPaths
+> Task :core:project:compileKotlin
+> Task :core:dsp:compileTestKotlin
+> Task :core:dsp:compileTestJava NO-SOURCE
+> Task :core:dsp:testClasses UP-TO-DATE
+> Task :core:dsp:test
+> Task :core:project:compileJava NO-SOURCE
+> Task :core:project:classes UP-TO-DATE
+> Task :core:project:jar
+> Task :core:storage:compileDebugKotlin
+> Task :core:storage:compileDebugJavaWithJavac NO-SOURCE
+> Task :core:designsystem:compileDebugKotlin
+> Task :core:designsystem:compileReleaseKotlin
+> Task :core:designsystem:compileDebugJavaWithJavac NO-SOURCE
+> Task :core:storage:bundleLibCompileToJarDebug
+> Task :core:designsystem:bundleLibCompileToJarDebug
+> Task :core:designsystem:bundleLibRuntimeToJarDebug
+> Task :core:database:kaptGenerateStubsDebugKotlin
+> Task :feature:settings:compileDebugKotlin
+> Task :feature:settings:compileDebugJavaWithJavac NO-SOURCE
+> Task :feature:settings:bundleLibCompileToJarDebug
+> Task :feature:settings:bundleLibRuntimeToJarDebug
+> Task :core:storage:bundleLibRuntimeToJarDebug
+> Task :core:designsystem:processDebugJavaRes
+> Task :core:storage:processDebugJavaRes
+> Task :feature:settings:processDebugJavaRes
+> Task :core:storage:compileReleaseKotlin
+> Task :core:storage:compileReleaseJavaWithJavac NO-SOURCE
+> Task :core:storage:bundleLibCompileToJarRelease
+> Task :core:database:kaptDebugKotlin
+
+> Task :core:audio:compileDebugKotlin
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/core/audio/src/main/kotlin/com/sorastudio/core/audio/AudioRecorder.kt:195:9 'constructor AudioTrack(Int, Int, Int, Int, Int, Int)' is deprecated. Deprecated in Java
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/core/audio/src/main/kotlin/com/sorastudio/core/audio/MidiDeviceManager.kt:29:21 'getter for devices: Array<(out) MidiDeviceInfo!>!' is deprecated. Deprecated in Java
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/core/audio/src/main/kotlin/com/sorastudio/core/audio/MidiDeviceManager.kt:46:32 'getter for devices: Array<(out) MidiDeviceInfo!>!' is deprecated. Deprecated in Java
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/core/audio/src/main/kotlin/com/sorastudio/core/audio/MidiDeviceManager.kt:47:17 Variable 'success' is assigned but never accessed
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/core/audio/src/main/kotlin/com/sorastudio/core/audio/ProjectRenderer.kt:204:22 Variable 'rt' is never used
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/core/audio/src/main/kotlin/com/sorastudio/core/audio/ProjectRenderer.kt:210:37 Parameter 'frames' is never used
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/core/audio/src/main/kotlin/com/sorastudio/core/audio/ProjectRenderer.kt:521:9 Parameter 'rt' is never used
+
+> Task :core:audio:compileDebugJavaWithJavac NO-SOURCE
+> Task :core:audio:bundleLibCompileToJarDebug
+> Task :core:database:compileDebugKotlin
+
+> Task :core:audio:compileReleaseKotlin
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/core/audio/src/main/kotlin/com/sorastudio/core/audio/AudioRecorder.kt:195:9 'constructor AudioTrack(Int, Int, Int, Int, Int, Int)' is deprecated. Deprecated in Java
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/core/audio/src/main/kotlin/com/sorastudio/core/audio/MidiDeviceManager.kt:29:21 'getter for devices: Array<(out) MidiDeviceInfo!>!' is deprecated. Deprecated in Java
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/core/audio/src/main/kotlin/com/sorastudio/core/audio/MidiDeviceManager.kt:46:32 'getter for devices: Array<(out) MidiDeviceInfo!>!' is deprecated. Deprecated in Java
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/core/audio/src/main/kotlin/com/sorastudio/core/audio/MidiDeviceManager.kt:47:17 Variable 'success' is assigned but never accessed
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/core/audio/src/main/kotlin/com/sorastudio/core/audio/ProjectRenderer.kt:204:22 Variable 'rt' is never used
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/core/audio/src/main/kotlin/com/sorastudio/core/audio/ProjectRenderer.kt:210:37 Parameter 'frames' is never used
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/core/audio/src/main/kotlin/com/sorastudio/core/audio/ProjectRenderer.kt:521:9 Parameter 'rt' is never used
+
+> Task :feature:arrangement:compileDebugKotlin
+> Task :feature:arrangement:compileDebugJavaWithJavac NO-SOURCE
+> Task :feature:automation:compileDebugKotlin
+> Task :feature:automation:compileDebugJavaWithJavac NO-SOURCE
+> Task :feature:arrangement:bundleLibCompileToJarDebug
+> Task :feature:automation:bundleLibCompileToJarDebug
+
+> Task :feature:export:compileDebugKotlin FAILED
+e: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/export/src/main/kotlin/com/sorastudio/feature/export/ExportScreen.kt:354:29 Unresolved reference: IconButton
+e: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/export/src/main/kotlin/com/sorastudio/feature/export/ExportScreen.kt:355:33 @Composable invocations can only happen from the context of a @Composable function
+
+> Task :core:database:compileDebugJavaWithJavac
+
+> Task :feature:drums:compileDebugKotlin
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/drums/src/main/kotlin/com/sorastudio/feature/drums/DrumsScreen.kt:137:65 Type mismatch: inferred type is String? but String was expected
+w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/drums/src/main/kotlin/com/sorastudio/feature/drums/DrumsScreen.kt:233:96 Type mismatch: inferred type is String? but String was expected
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':feature:export:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':feature:export:compileDebugKotlin'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:130)
+	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:282)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:128)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:80)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:463)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:380)
+	at org.gradle.execution.plan.DefaultPlanExecutor.process(DefaultPlanExecutor.java:116)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.executeWithServices(DefaultTaskExecutionGraph.java:138)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.execute(DefaultTaskExecutionGraph.java:123)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:35)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:51)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:54)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:43)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor.execute(BuildOperationFiringBuildWorkerExecutor.java:40)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$executeTasks$10(DefaultBuildLifecycleController.java:313)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
+	at org.gradle.internal.model.StateTransitionController.lambda$tryTransition$8(StateTransitionController.java:177)
+	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:44)
+	at org.gradle.internal.model.StateTransitionController.tryTransition(StateTransitionController.java:177)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.executeTasks(DefaultBuildLifecycleController.java:304)
+	at org.gradle.internal.build.DefaultBuildWorkGraphController$DefaultBuildWorkGraph.runWork(DefaultBuildWorkGraphController.java:220)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:264)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:128)
+	at org.gradle.composite.internal.DefaultBuildController.doRun(DefaultBuildController.java:181)
+	at org.gradle.composite.internal.DefaultBuildController.access$000(DefaultBuildController.java:50)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.lambda$run$0(DefaultBuildController.java:198)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:80)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.run(DefaultBuildController.java:198)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+Caused by: org.gradle.workers.internal.DefaultWorkerExecutor$WorkExecutionException: A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+	at org.gradle.workers.internal.DefaultWorkerExecutor$WorkItemExecution.waitForCompletion(DefaultWorkerExecutor.java:287)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.lambda$waitForItemsAndGatherFailures$2(DefaultAsyncWorkTracker.java:130)
+	at org.gradle.internal.Factories$1.create(Factories.java:31)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLocks(DefaultWorkerLeaseService.java:336)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLocks(DefaultWorkerLeaseService.java:319)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLock(DefaultWorkerLeaseService.java:324)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForItemsAndGatherFailures(DefaultAsyncWorkTracker.java:126)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForItemsAndGatherFailures(DefaultAsyncWorkTracker.java:92)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForAll(DefaultAsyncWorkTracker.java:78)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForCompletion(DefaultAsyncWorkTracker.java:66)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:252)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:47)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:68)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeAction(TaskExecution.java:229)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeActions(TaskExecution.java:212)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeWithPreviousOutputFiles(TaskExecution.java:195)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.execute(TaskExecution.java:162)
+	at org.gradle.internal.execution.steps.ExecuteStep.executeInternal(ExecuteStep.java:105)
+	at org.gradle.internal.execution.steps.ExecuteStep.access$000(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:59)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:56)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:56)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:41)
+	at org.gradle.internal.execution.steps.TimeoutStep.executeWithoutTimeout(TimeoutStep.java:74)
+	at org.gradle.internal.execution.steps.TimeoutStep.execute(TimeoutStep.java:55)
+	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:50)
+	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:28)
+	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:67)
+	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:37)
+	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:61)
+	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:26)
+	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:67)
+	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:45)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:40)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:29)
+	at org.gradle.internal.execution.steps.BuildCacheStep.executeWithoutCache(BuildCacheStep.java:189)
+	at org.gradle.internal.execution.steps.BuildCacheStep.executeAndStoreInCache(BuildCacheStep.java:145)
+	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$executeWithCache$4(BuildCacheStep.java:101)
+	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$executeWithCache$5(BuildCacheStep.java:101)
+	at org.gradle.internal.Try$Success.map(Try.java:164)
+	at org.gradle.internal.execution.steps.BuildCacheStep.executeWithCache(BuildCacheStep.java:85)
+	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$execute$0(BuildCacheStep.java:74)
+	at org.gradle.internal.Either$Left.fold(Either.java:115)
+	at org.gradle.internal.execution.caching.CachingState.fold(CachingState.java:62)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:73)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:48)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:46)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:35)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.executeBecause(SkipUpToDateStep.java:76)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.lambda$execute$2(SkipUpToDateStep.java:54)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:54)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:36)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:37)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:27)
+	at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:49)
+	at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:27)
+	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:71)
+	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:39)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:65)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:36)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:106)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:55)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:64)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:43)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.executeWithNonEmptySources(AbstractSkipEmptyWorkStep.java:125)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:61)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:36)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:23)
+	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:75)
+	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:41)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.lambda$execute$0(AssignMutableWorkspaceStep.java:35)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$4.withWorkspace(TaskExecution.java:289)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:31)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:22)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:40)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:23)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$2(ExecuteWorkBuildOperationFiringStep.java:67)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:67)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:39)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:46)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:34)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:48)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:35)
+	at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:127)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:80)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:463)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:380)
+	at org.gradle.execution.plan.DefaultPlanExecutor.process(DefaultPlanExecutor.java:116)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.executeWithServices(DefaultTaskExecutionGraph.java:138)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.execute(DefaultTaskExecutionGraph.java:123)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:35)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:51)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:54)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:43)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor.execute(BuildOperationFiringBuildWorkerExecutor.java:40)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$executeTasks$10(DefaultBuildLifecycleController.java:313)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
+	at org.gradle.internal.model.StateTransitionController.lambda$tryTransition$8(StateTransitionController.java:177)
+	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:44)
+	at org.gradle.internal.model.StateTransitionController.tryTransition(StateTransitionController.java:177)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.executeTasks(DefaultBuildLifecycleController.java:304)
+	at org.gradle.internal.build.DefaultBuildWorkGraphController$DefaultBuildWorkGraph.runWork(DefaultBuildWorkGraphController.java:220)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:264)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:128)
+	at org.gradle.composite.internal.DefaultBuildController.doRun(DefaultBuildController.java:181)
+	at org.gradle.composite.internal.DefaultBuildController.access$000(DefaultBuildController.java:50)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.lambda$run$0(DefaultBuildController.java:198)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:80)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.run(DefaultBuildController.java:198)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+Caused by: org.jetbrains.kotlin.gradle.tasks.CompilationErrorException: Compilation error. See log for more details
+	at org.jetbrains.kotlin.gradle.tasks.TasksUtilsKt.throwExceptionIfCompilationFailed(tasksUtils.kt:20)
+	at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.run(GradleKotlinCompilerWork.kt:141)
+	at org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction.execute(GradleCompilerRunnerWithWorkers.kt:73)
+	at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
+	at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
+	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
+	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
+	at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$0(DefaultWorkerExecutor.java:174)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:187)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:120)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:162)
+	at org.gradle.internal.Factories$1.create(Factories.java:31)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:264)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:128)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:133)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:157)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:126)
+	... 2 more
+
+
+BUILD FAILED in 4m 3s
+691 actionable tasks: 385 executed, 306 from cache
