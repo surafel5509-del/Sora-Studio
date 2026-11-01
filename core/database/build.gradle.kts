@@ -33,8 +33,10 @@ dependencies {
     implementation(project(":core:common"))
     implementation(project(":core:project"))
     implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.room.runtime)
-    implementation(libs.androidx.room.ktx)
+    // api: the app module builds SoraDatabase via Room's builder, so Room
+    // types (RoomDatabase supertype) must be visible on consumers' classpaths.
+    api(libs.androidx.room.runtime)
+    api(libs.androidx.room.ktx)
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.kotlinx.serialization.json)
     kapt(libs.androidx.room.compiler)
