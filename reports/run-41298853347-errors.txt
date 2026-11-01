@@ -1,0 +1,11 @@
+895:> Task :core:audio:compileDebugKotlin FAILED
+896:e: file:///home/runner/work/Sora-Studio/Sora-Studio/core/audio/src/main/kotlin/com/sorastudio/core/audio/ProjectRenderer.kt:334:13 'when' expression must be exhaustive, add necessary 'is StopAllLive' branch or 'else' branch instead
+902:> Task :core:audio:compileReleaseKotlin FAILED
+903:e: file:///home/runner/work/Sora-Studio/Sora-Studio/core/audio/src/main/kotlin/com/sorastudio/core/audio/ProjectRenderer.kt:334:13 'when' expression must be exhaustive, add necessary 'is StopAllLive' branch or 'else' branch instead
+909:* What went wrong:
+910:Execution failed for task ':core:audio:compileDebugKotlin'.
+920:org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':core:audio:compileDebugKotlin'.
+1182:* What went wrong:
+1183:Execution failed for task ':core:audio:compileReleaseKotlin'.
+1193:org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':core:audio:compileReleaseKotlin'.
+1405:BUILD FAILED in 3m 45s
