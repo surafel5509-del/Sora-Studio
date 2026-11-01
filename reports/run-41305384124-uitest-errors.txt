@@ -1,0 +1,5 @@
+1291:com.sorastudio.SoraAppTest > canNavigateToSoundsAndSettings[emulator-5554 - 11] [31mFAILED [0m
+1292:	java.lang.AssertionError: Assert failed: The component is not displayed!
+1298:> Task :app:connectedDebugAndroidTest FAILED
+1345:Caused by: org.gradle.api.GradleException: There were failing tests. See the report at: file:///home/runner/work/Sora-Studio/Sora-Studio/app/build/reports/androidTests/connected/debug/index.html
+1475:BUILD FAILED in 5m 25s
