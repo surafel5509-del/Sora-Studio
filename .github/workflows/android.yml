@@ -111,8 +111,9 @@ jobs:
           arch: x86_64
           disable-animations: true
           script: |
-            set -o pipefail
-            ./gradlew connectedDebugAndroidTest --stacktrace 2>&1 | tee uitest.log
+            ./gradlew connectedDebugAndroidTest --stacktrace > uitest.log 2>&1 || echo $? > uitest.status
+            tail -c 60000 uitest.log
+            test ! -f uitest.status
 
       - name: Publish UI test failure log
         if: failure()
