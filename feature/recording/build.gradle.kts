@@ -45,6 +45,8 @@ dependencies {
     implementation(libs.androidx.activity.compose)
     implementation(libs.kotlinx.coroutines.android)
     implementation(project(":core:designsystem"))
+    implementation(project(":core:common"))
+    implementation(project(":core:dsp"))
     implementation(project(":core:project"))
     implementation(project(":core:audio"))
     implementation(project(":core:database"))
