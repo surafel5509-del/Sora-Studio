@@ -362,6 +362,10 @@ class ProjectRenderer(
                 is LiveEvent.SampleHit -> {
                     liveSampler.trigger(event.data, event.stereo, event.rate, event.gain, event.gain)
                 }
+                is LiveEvent.StopAllLive -> {
+                    liveSampler.stopAll()
+                    for ((_, synth) in liveSynths) synth.allNotesOff()
+                }
             }
         }
     }
