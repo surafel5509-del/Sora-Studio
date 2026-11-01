@@ -1,5 +1,8 @@
 package com.sorastudio
 
+import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.semantics.SemanticsProperties
+import androidx.compose.ui.test.SemanticsMatcher
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.hasClickAction
 import androidx.compose.ui.test.hasText
@@ -23,7 +26,9 @@ class SoraAppTest {
     val composeRule = createAndroidComposeRule<MainActivity>()
 
     private fun clickNav(label: String) {
-        composeRule.onNode(hasText(label) and hasClickAction()).performClick()
+        // Role.Tab disambiguates bottom-nav items from same-labelled home cards.
+        val tabRole = SemanticsMatcher.expectValue(SemanticsProperties.Role, Role.Tab)
+        composeRule.onNode(hasText(label) and hasClickAction() and tabRole).performClick()
     }
 
     @Test
@@ -53,9 +58,10 @@ class SoraAppTest {
     @Test
     fun newProjectDialogOpens() {
         composeRule.onNodeWithText("New Project").performClick()
-        // "Beat Starter" also appears in the prefilled name field, so assert a
-        // non-default template label that only exists as a radio option.
-        composeRule.onNodeWithText("Song Starter").assertIsDisplayed()
+        // Template names also exist on the Home screen behind the dialog, so
+        // assert labels that are unique to the dialog itself.
+        composeRule.onNodeWithText("Project name").assertIsDisplayed()
         composeRule.onNodeWithText("Create").assertIsDisplayed()
+        composeRule.onNodeWithText("Cancel").assertIsDisplayed()
     }
 }
