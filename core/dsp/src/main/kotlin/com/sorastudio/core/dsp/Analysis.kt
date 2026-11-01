@@ -22,35 +22,48 @@ object PitchDetector {
         val maxPeriod = min(n / 2, (sampleRate / minFreq).toInt())
         if (maxPeriod <= minPeriod) return -1.0
 
-        // Normalised autocorrelation via difference of squares trick is overkill;
-        // direct correlation on <=4096 samples is fine for block-rate analysis.
-        var bestPeriod = -1
-        var bestCorr = 0.0
+        // Direct autocorrelation on <=8192 samples is fine for block-rate analysis.
         val len = n - maxPeriod
+        val correlations = DoubleArray(maxPeriod + 1)
+        var bestCorr = 0.0
         for (period in minPeriod..maxPeriod) {
             var corr = 0.0
             for (i in 0 until len) corr += mono[i] * mono[i + period]
             corr /= len
-            if (corr > bestCorr) {
-                bestCorr = corr
-                bestPeriod = period
-            }
+            correlations[period] = corr
+            if (corr > bestCorr) bestCorr = corr
         }
-        if (bestPeriod <= 0) return -1.0
         // Confidence: normalised by zero-lag energy
         var zeroLag = 0.0
         for (i in 0 until len) zeroLag += mono[i] * mono[i]
         zeroLag /= len
         if (zeroLag <= 0 || bestCorr / zeroLag < 0.45) return -1.0
 
-        // Parabolic interpolation around the peak
-        fun corrAt(p: Int): Double {
-            if (p < 0 || p >= n) return 0.0
-            var c = 0.0
-            val l = n - maxPeriod
-            for (i in 0 until l) c += mono[i] * mono[i + p]
-            return c / l
+        // Octave guard: for periodic signals EVERY multiple of the true period
+        // correlates strongly. Pick the FIRST local peak that reaches 90% of the
+        // global maximum instead of the raw argmax (which causes octave-down errors).
+        val threshold = bestCorr * 0.9
+        var bestPeriod = -1
+        var period = minPeriod
+        while (period <= maxPeriod) {
+            if (correlations[period] > threshold) {
+                // Refine to the local maximum of this lobe.
+                var localBest = period
+                var q = period
+                while (q + 1 <= maxPeriod && correlations[q + 1] > correlations[localBest]) {
+                    q++
+                    localBest = q
+                }
+                bestPeriod = localBest
+                break
+            }
+            period++
         }
+        if (bestPeriod <= 0) return -1.0
+        bestCorr = correlations[bestPeriod]
+
+        // Parabolic interpolation around the peak
+        fun corrAt(p: Int): Double = if (p in correlations.indices) correlations[p] else 0.0
         val cPrev = corrAt(bestPeriod - 1)
         val cNext = corrAt(bestPeriod + 1)
         val denom = cPrev - 2 * bestCorr + cNext
