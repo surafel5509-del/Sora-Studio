@@ -1,0 +1,14 @@
+921:> Task :feature:automation:compileDebugKotlin FAILED
+922:e: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/automation/src/main/kotlin/com/sorastudio/feature/automation/AutomationScreen.kt:106:62 Unresolved reference: dsp
+923:e: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/automation/src/main/kotlin/com/sorastudio/feature/automation/AutomationScreen.kt:107:50 Unresolved reference: dsp
+924:e: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/automation/src/main/kotlin/com/sorastudio/feature/automation/AutomationScreen.kt:109:76 Unresolved reference: displayName
+927:e: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/drums/src/main/kotlin/com/sorastudio/feature/drums/DrumsScreen.kt:55:28 Unresolved reference: common
+928:e: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/drums/src/main/kotlin/com/sorastudio/feature/drums/DrumsScreen.kt:376:54 Unresolved reference: newId
+930:> Task :feature:drums:compileDebugKotlin FAILED
+937:* What went wrong:
+938:Execution failed for task ':feature:automation:compileDebugKotlin'.
+948:org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':feature:automation:compileDebugKotlin'.
+1150:* What went wrong:
+1151:Execution failed for task ':feature:drums:compileDebugKotlin'.
+1161:org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':feature:drums:compileDebugKotlin'.
+1373:BUILD FAILED in 3m 14s
