@@ -46,7 +46,7 @@ object MixerCore {
 
     /** Collapse to mono (in place, both channels get the sum). */
     fun toMonoInPlace(buffer: FloatArray, frames: Int) {
-        val n = min(frames, buffer.size / 2)
+        val n = minOf(frames, buffer.size / 2)
         for (f in 0 until n) {
             val m = (buffer[f * 2] + buffer[f * 2 + 1]) * 0.5f
             buffer[f * 2] = m

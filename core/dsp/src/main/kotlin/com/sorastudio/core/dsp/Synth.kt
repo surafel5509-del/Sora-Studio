@@ -310,7 +310,7 @@ private class SynthVoice {
                 // keep osc phase advancing for waveform blend continuity
                 osc1.process(freq, sampleRate)
             } else if (patch.fmRatio > 0f) {
-                val fmEnv = exp(-ageSamples.toDouble() / max(1.0, patch.fmDecay * sampleRate)).toFloat()
+                val fmEnv = exp(-ageSamples.toDouble() / max(1.0, patch.fmDecay.toDouble() * sampleRate)).toFloat()
                 val modFreq = freq * patch.fmRatio
                 val mod = sin(2.0 * PI * modFreq * ageSamples / sampleRate).toFloat()
                 val deviation = mod * patch.fmIndex * fmEnv * freq
