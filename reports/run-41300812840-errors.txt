@@ -1,0 +1,11 @@
+941:w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/drums/src/main/kotlin/com/sorastudio/feature/drums/DrumsScreen.kt:137:65 Type mismatch: inferred type is String? but String was expected
+942:w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/drums/src/main/kotlin/com/sorastudio/feature/drums/DrumsScreen.kt:233:96 Type mismatch: inferred type is String? but String was expected
+952:w: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/instruments/src/main/kotlin/com/sorastudio/feature/instruments/InstrumentsScreen.kt:179:65 Type mismatch: inferred type is String? but String was expected
+961:e: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/recording/src/main/kotlin/com/sorastudio/feature/recording/AudioEditorScreen.kt:179:76 Unresolved reference: size
+962:e: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/recording/src/main/kotlin/com/sorastudio/feature/recording/AudioEditorScreen.kt:185:71 Unresolved reference: size
+963:e: file:///home/runner/work/Sora-Studio/Sora-Studio/feature/recording/src/main/kotlin/com/sorastudio/feature/recording/AudioEditorScreen.kt:308:67 Unresolved reference: size
+965:> Task :feature:recording:compileDebugKotlin FAILED
+974:* What went wrong:
+975:Execution failed for task ':feature:recording:compileDebugKotlin'.
+985:org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':feature:recording:compileDebugKotlin'.
+1244:BUILD FAILED in 4m 5s
