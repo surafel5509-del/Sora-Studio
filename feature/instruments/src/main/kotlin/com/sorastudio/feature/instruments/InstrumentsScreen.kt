@@ -40,6 +40,7 @@ import androidx.compose.runtime.mutableStateMapOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -158,10 +159,12 @@ fun InstrumentsScreen(
     val midiManager = remember(context) { MidiDeviceManager(context) }
     var midiConnected by remember { mutableStateOf(false) }
     var midiDevices by remember { mutableStateOf<List<String>>(emptyList()) }
+    val latestNoteOn by rememberUpdatedState { pitch: Int, vel: Float -> noteOn(pitch, vel) }
+    val latestNoteOff by rememberUpdatedState { pitch: Int -> noteOff(pitch) }
     androidx.compose.runtime.LaunchedEffect(Unit) {
         midiDevices = midiManager.availableDeviceNames()
-        midiManager.onNoteOn = { pitch, vel -> noteOn(pitch, vel / 127f) }
-        midiManager.onNoteOff = { pitch -> noteOff(pitch) }
+        midiManager.onNoteOn = { pitch, vel -> latestNoteOn(pitch, vel / 127f) }
+        midiManager.onNoteOff = { pitch -> latestNoteOff(pitch) }
     }
 
     val samplePicker = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri: Uri? ->

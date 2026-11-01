@@ -13,7 +13,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.Undo
+import androidx.compose.material.icons.filled.Undo
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material.icons.filled.Save
@@ -144,7 +144,7 @@ fun AudioEditorScreen(
                         refreshPeaks(undo)
                         status = "Undone."
                     }
-                }, enabled = undoBuffer != null) { Icon(Icons.AutoMirrored.Filled.Undo, "Undo edit") }
+                }, enabled = undoBuffer != null) { Icon(Icons.Filled.Undo, "Undo edit") }
             }
         }
 
