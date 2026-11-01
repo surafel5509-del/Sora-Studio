@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.sorastudio.SoraAppTest" tests="4" failures="1" errors="0" skipped="0" time="5.599" timestamp="2026-11-01T12:30:35" hostname="localhost">
+  <properties>
+    <property name="device" value="emulator-5554 - 11" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="canNavigateToStudioAndSeeTabs" classname="com.sorastudio.SoraAppTest" time="2.674" />
+  <testcase name="newProjectDialogOpens" classname="com.sorastudio.SoraAppTest" time="0.763" />
+  <testcase name="homeShowsBrandAndQuickActions" classname="com.sorastudio.SoraAppTest" time="0.452" />
+  <testcase name="canNavigateToSoundsAndSettings" classname="com.sorastudio.SoraAppTest" time="0.863">
+    <failure>java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (Text + EditableText contains 'Appearance' (ignoreCase: false))
+
+at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:75)
+at com.sorastudio.SoraAppTest.canNavigateToSoundsAndSettings(SoraAppTest.kt:57)
+</failure>
+  </testcase>
+</testsuite>
