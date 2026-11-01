@@ -15,7 +15,7 @@ hiltNavigationCompose = "1.2.0"
 room = "2.6.1"
 datastore = "1.1.1"
 coroutines = "1.8.1"
-serialization = "1.7.1"
+serialization = "1.6.3"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
